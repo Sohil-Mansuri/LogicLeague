@@ -27,6 +27,8 @@
             var fib2 = FibonacciProblem.FibV2(10, memo);
 
             var fib3 = FibonacciProblem.FibV3(10);
+
+            var fib4 = FibonacciProblem.FibV4(10);
             Console.WriteLine("Hello, World!");
         }
     }
