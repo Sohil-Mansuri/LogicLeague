@@ -22,13 +22,12 @@
             var maxSum2 = MaximumSubArray.MaxSubArray([-2, -1]);
 
             var fib = FibonacciProblem.Fib(10);
-
             var memo = new Dictionary<int, int>();
             var fib2 = FibonacciProblem.FibV2(10, memo);
-
             var fib3 = FibonacciProblem.FibV3(10);
-
             var fib4 = FibonacciProblem.FibV4(10);
+
+            var maxProduct = MaximumProduct.MaxProduct([2, 3, -2, 4]);
             Console.WriteLine("Hello, World!");
         }
     }

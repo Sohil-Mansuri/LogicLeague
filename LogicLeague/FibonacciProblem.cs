@@ -46,16 +46,17 @@
             if (number <= 1) return number;
 
             int previous1 = 1; int previous2 = 0;
+            int current = 0;
 
             for (int index = 2; index <= number; index++)
             {
-                int current = previous1 + previous2;
+                current = previous1 + previous2;
 
                 previous2 = previous1;
                 previous1 = current;
             }
 
-            return previous1;
+            return current;
         }
     }
 }
