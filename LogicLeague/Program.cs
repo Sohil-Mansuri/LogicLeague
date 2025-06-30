@@ -16,6 +16,17 @@
             var productArray = ProductOfArrary.ProductExceptSelf([1, 2, 3, 4]);
             var productArray2 = ProductOfArrary.ProductExceptSelfV2([2, 3, 5, 7]);
             var productArray3 = ProductOfArrary.ProductExceptSelfV2([-1, 1, 0, -3, 3]);
+
+
+            var maxSum = MaximumSubArray.MaxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]);
+            var maxSum2 = MaximumSubArray.MaxSubArray([-2, -1]);
+
+            var fib = FibonacciProblem.Fib(10);
+
+            var memo = new Dictionary<int, int>();
+            var fib2 = FibonacciProblem.FibV2(10, memo);
+
+            var fib3 = FibonacciProblem.FibV3(10);
             Console.WriteLine("Hello, World!");
         }
     }
