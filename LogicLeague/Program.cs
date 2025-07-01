@@ -28,6 +28,9 @@
             var fib4 = FibonacciProblem.FibV4(10);
 
             var maxProduct = MaximumProduct.MaxProduct([2, 3, -2, 4]);
+
+            var minInRotatedArray = FindMinimumInRotatedArray.FindMin([2, 1]);
+            var minInRotatedArray1 = FindMinimumInRotatedArray.findMin([3, 2, 1]);
             Console.WriteLine("Hello, World!");
         }
     }
