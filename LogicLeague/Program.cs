@@ -35,6 +35,8 @@
             var searchTarget2 = SearchInRotatedArray.Search([3,1], 1);
 
             var twoSumPart2 = TwoSumPart2.TwoSum([-1, 0], -1);
+
+            var longestSubsstring = LongestSubstring.LengthOfLongestSubstringV2("pwwkew");
             Console.WriteLine("Hello, World!");
         }
     }
