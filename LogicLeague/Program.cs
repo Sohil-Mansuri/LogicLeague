@@ -43,6 +43,13 @@
             var threeSumResult2 = ThreeSumProblem.ThreeSum([-1, 0, 1, 2, -1, -4]);
             var threeSumResult3 = ThreeSumProblem.ThreeSum([2, -3, 0, -2, -5, -5, -4, 1, 2, -2, 2, 0, 2, -4, 5, 5, -10]);
             var threeSum = ThreeSumProblem.ThreeSumV2([-1, 0, 1, 2, -1, -4]);
+
+            var mergeSortedArray = MergeSortedArray.Merge([1, 2, 3,], [2, 5, 6]);
+
+            var mergeSortedResult2 = MergeSortedArray.Merge([4, 5, 6, 0, 0, 0], 3, [1, 2, 3], 3);
+
+            var mergeSortedResult = MergeSortedArray.Merge([0, 0, 0, 0, 0], 0, [1, 2, 3, 4, 5], 5);
+
             Console.WriteLine("Hello, World!");
         }
     }
