@@ -32,11 +32,17 @@
             var minInRotatedArray = FindMinimumInRotatedArray.FindMin([2, 1]);
 
             var searchTarget = SearchInRotatedArray.Search([4, 5, 6, 7, 0, 1, 2], 3);
-            var searchTarget2 = SearchInRotatedArray.Search([3,1], 1);
+            var searchTarget2 = SearchInRotatedArray.Search([3, 1], 1);
 
             var twoSumPart2 = TwoSumPart2.TwoSum([-1, 0], -1);
 
             var longestSubsstring = LongestSubstring.LengthOfLongestSubstringV2("pwwkew");
+
+
+            var threeSumResult = ThreeSumProblem.ThreeSum([-5, -5, 0, 1, 5]);
+            var threeSumResult2 = ThreeSumProblem.ThreeSum([-1, 0, 1, 2, -1, -4]);
+            var threeSumResult3 = ThreeSumProblem.ThreeSum([2, -3, 0, -2, -5, -5, -4, 1, 2, -2, 2, 0, 2, -4, 5, 5, -10]);
+            var threeSum = ThreeSumProblem.ThreeSumV2([-1, 0, 1, 2, -1, -4]);
             Console.WriteLine("Hello, World!");
         }
     }
