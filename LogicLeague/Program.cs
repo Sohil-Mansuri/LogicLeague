@@ -50,6 +50,14 @@
 
             var mergeSortedResult = MergeSortedArray.Merge([0, 0, 0, 0, 0], 0, [1, 2, 3, 4, 5], 5);
 
+            var containerResult1 = ContainerWaterProblem.MaxArea([1, 8, 6, 2, 5, 4, 8, 3, 7]);
+            var containerResult2 = ContainerWaterProblem.MaxArea([1, 1]);
+
+            var isValidOrder = AlienDictionary.IsAlienSorted(["hello", "leetcode"], "hlabcdefgijkmnopqrstuvwxyz");
+            var isValidOrder1 = AlienDictionary.IsAlienSorted(["word", "world", "row"], "worldabcefghijkmnpqstuvxyz");
+
+            var isValidOrder2 = AlienDictionary.IsAlienSorted(["apple", "app"], "abcdefghijklmnopqrstuvwxyz");
+
             Console.WriteLine("Hello, World!");
         }
     }
