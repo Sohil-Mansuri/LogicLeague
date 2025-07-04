@@ -65,7 +65,15 @@
             var nextPermutation4 = NexuPermutation.NextPermutation([1, 2, 5, 4, 3]);
 
 
+            var uniqueElementsCount = RemoveDuplicatesProblem.RemoveDuplicatesV2([0, 0, 1, 1, 1, 2, 2, 3, 3, 4]);
 
+            var uniqueElementsCount1 = RemoveDuplicatesProblem.RemoveDuplicatesV2([1, 1, 2]);
+
+            var uniqueElementsCount2 = RemoveDuplicatesProblem.RemoveDuplicatesV2([1, 1]);
+
+            var uniqueElementsCount3 = RemoveDuplicatesProblem.RemoveDuplicatesV2([1, 2, 3]);
+
+            var uniqueElemetns4 = RemoveDuplicatesProblem.RemoveDuplicatesV2([1, 2, 2]);
             Console.WriteLine("Hello, World!");
         }
     }
