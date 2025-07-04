@@ -74,6 +74,22 @@
             var uniqueElementsCount3 = RemoveDuplicatesProblem.RemoveDuplicatesV2([1, 2, 3]);
 
             var uniqueElemetns4 = RemoveDuplicatesProblem.RemoveDuplicatesV2([1, 2, 2]);
+
+            var firstAndLastIndex = FirstAndLastPosition.SearchRange([5, 7, 7, 8, 8, 10], 8);
+            var firstAndLastIndex2 = FirstAndLastPosition.SearchRange([0, 0, 1, 1, 1, 8, 9, 10], 12);
+            var firstAndLastIndex3 = FirstAndLastPosition.SearchRange([1], 1);
+            var firstAndLastIndex4 = FirstAndLastPosition.SearchRange([1, 2, 3, 3, 3, 3, 4, 5, 9], 3);
+            var firstAndLastIndex5 = FirstAndLastPosition.
+                SearchRange([0, 0, 1, 1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 6, 6, 6, 8, 10, 10], 4);
+
+            var firstAndLastIndex6 = FirstAndLastPosition.SearchRange([2, 2], 2);
+
+            var firstAndLastIndex7 = FirstAndLastPosition.SearchRange([5, 7, 7, 7, 7, 8, 8, 10], 8);
+
+            var firstAndLastIndex8 = FirstAndLastPosition.
+                SearchRange([0, 0, 0, 0, 1, 2, 3, 3, 4, 5, 6, 6, 7, 8, 8, 8, 9, 9, 10, 10, 11, 11], 0);
+
+            var firAndLastIndex9 = FirstAndLastPosition.SearchRange([1, 1, 1, 1, 1, 1, 2, 3, 4, 4, 5, 5, 5, 6, 7, 8, 8, 8, 8], 8);
             Console.WriteLine("Hello, World!");
         }
     }
