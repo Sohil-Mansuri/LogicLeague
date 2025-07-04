@@ -58,6 +58,14 @@
 
             var isValidOrder2 = AlienDictionary.IsAlienSorted(["apple", "app"], "abcdefghijklmnopqrstuvwxyz");
 
+
+            var nextPermutation1 = NexuPermutation.NextPermutation([1, 2, 3, 4, 5]);
+            var nextPermutation2 = NexuPermutation.NextPermutation([5, 4, 3, 2, 1]);
+            var nextPermutation3 = NexuPermutation.NextPermutation([2, 5, 4, 3, 1]);
+            var nextPermutation4 = NexuPermutation.NextPermutation([1, 2, 5, 4, 3]);
+
+
+
             Console.WriteLine("Hello, World!");
         }
     }
