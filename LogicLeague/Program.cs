@@ -90,6 +90,13 @@
                 SearchRange([0, 0, 0, 0, 1, 2, 3, 3, 4, 5, 6, 6, 7, 8, 8, 8, 9, 9, 10, 10, 11, 11], 0);
 
             var firAndLastIndex9 = FirstAndLastPosition.SearchRange([1, 1, 1, 1, 1, 1, 2, 3, 4, 4, 5, 5, 5, 6, 7, 8, 8, 8, 8], 8);
+
+            var totalWater = TrappingRainWater.Trap([0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1]);
+            var totalWater1 = TrappingRainWater.Trap([4, 2, 0, 3, 2, 5]);
+
+            var midean1 = MedianOfSortedArrary.FindMedianSortedArrays([1, 3], [2]);
+            var midean2 = MedianOfSortedArrary.FindMedianSortedArrays([1, 2], [3, 4]);
+            var midean3 = MedianOfSortedArrary.FindMedianSortedArrays([3, 4], [1, 2]);
             Console.WriteLine("Hello, World!");
         }
     }
