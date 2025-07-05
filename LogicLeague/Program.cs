@@ -97,6 +97,9 @@
             var midean1 = MedianOfSortedArrary.FindMedianSortedArrays([1, 3], [2]);
             var midean2 = MedianOfSortedArrary.FindMedianSortedArrays([1, 2], [3, 4]);
             var midean3 = MedianOfSortedArrary.FindMedianSortedArrays([3, 4], [1, 2]);
+
+            var isValidAnagram = ValidAnagram.IsAnagramV2("anagram", "nagaram");
+            var isValidAnagram1 = ValidAnagram.IsAnagramV2("Bat", "nagaram");
             Console.WriteLine("Hello, World!");
         }
     }
