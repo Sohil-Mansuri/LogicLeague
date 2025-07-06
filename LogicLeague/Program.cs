@@ -105,6 +105,11 @@
 
             var topKFrequestElements = TopKFrequestElements.TopKFrequent([1, 1, 1, 2, 2, 3], 2);
 
+            var groupAnagram = GropAnagram.GroupAnagrams(["eat", "tea", "tan", "ate", "nat", "bat"]);
+
+            var groupAnagram2 = GropAnagram.GroupAnagrams(["bdddddddddd", "bbbbbbbbbbc"]);
+
+
             Console.WriteLine("Hello, World!");
         }
     }
