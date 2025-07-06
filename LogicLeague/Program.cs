@@ -100,6 +100,11 @@
 
             var isValidAnagram = ValidAnagram.IsAnagramV2("anagram", "nagaram");
             var isValidAnagram1 = ValidAnagram.IsAnagramV2("Bat", "nagaram");
+
+            var top5elements = TopKElements.Top5MaximumElements([5, 1, 10, 20, 3, 12, 8, 15]);
+
+            var topKFrequestElements = TopKFrequestElements.TopKFrequent([1, 1, 1, 2, 2, 3], 2);
+
             Console.WriteLine("Hello, World!");
         }
     }
