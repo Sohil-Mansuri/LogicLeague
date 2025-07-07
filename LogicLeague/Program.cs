@@ -132,6 +132,9 @@
 
             var fizzBuzz = FizzBuzzProblem.FizzBuzz(15);
 
+            var longestRepeatingCharacter = LongestRepeatingCharacter.CharacterReplacement("AABABBA", 1);
+            var longestRepeatingCharacter2 = LongestRepeatingCharacter.CharacterReplacement("ABAB", 2);
+
             Console.WriteLine("Hello, World!");
         }
     }
