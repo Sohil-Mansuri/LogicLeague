@@ -111,18 +111,24 @@
 
 
             var validSudoko = ValidSudokoProblem.IsValidSudoku([["5","3",".",".","7",".",".",".","."]
-,["6",".",".","1","9","5",".",".","."]
-,[".","9","8",".",".",".",".","6","."]
-,["8",".",".",".","6",".",".",".","3"]
-,["4",".",".","8",".","3",".",".","1"]
-,["7",".",".",".","2",".",".",".","6"]
-,[".","6",".",".",".",".","2","8","."]
-,[".",".",".","4","1","9",".",".","5"]
-,[".",".",".",".","8",".",".","7","9"]]);
+                                                                ,["6",".",".","1","9","5",".",".","."]
+                                                                ,[".","9","8",".",".",".",".","6","."]
+                                                                ,["8",".",".",".","6",".",".",".","3"]
+                                                                ,["4",".",".","8",".","3",".",".","1"]
+                                                                ,["7",".",".",".","2",".",".",".","6"]
+                                                                ,[".","6",".",".",".",".","2","8","."]
+                                                                ,[".",".",".","4","1","9",".",".","5"]
+                                                                ,[".",".",".",".","8",".",".","7","9"]]);
 
             var encodedString = EncodeDecodeString.EncodeString(["ab", "dfg", "ac", "dg"]);
 
             var originalString = EncodeDecodeString.Decode(encodedString);
+
+            var longestConsutive = LongestConsecutiveSequence.LongestConsecutive([100, 4, 200, 1, 3, 2]);
+            var longestConsutive1 = LongestConsecutiveSequence.LongestConsecutive([0, 3, 7, 2, 5, 8, 4, 6, 0, 1]);
+
+            var longestCommonPrefix = LongestCommonPrefixProblem.LongestCommonPrefix(["flower", "flow", "flight"]);
+            var longestCommonPrefix2 = LongestCommonPrefixProblem.LongestCommonPrefix(["dog", "racecar", "car"]);
 
             Console.WriteLine("Hello, World!");
         }
