@@ -120,6 +120,10 @@
 ,[".",".",".","4","1","9",".",".","5"]
 ,[".",".",".",".","8",".",".","7","9"]]);
 
+            var encodedString = EncodeDecodeString.EncodeString(["ab", "dfg", "ac", "dg"]);
+
+            var originalString = EncodeDecodeString.Decode(encodedString);
+
             Console.WriteLine("Hello, World!");
         }
     }
