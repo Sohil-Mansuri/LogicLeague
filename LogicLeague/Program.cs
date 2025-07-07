@@ -130,6 +130,8 @@
             var longestCommonPrefix = LongestCommonPrefixProblem.LongestCommonPrefix(["flower", "flow", "flight"]);
             var longestCommonPrefix2 = LongestCommonPrefixProblem.LongestCommonPrefix(["dog", "racecar", "car"]);
 
+            var fizzBuzz = FizzBuzzProblem.FizzBuzz(15);
+
             Console.WriteLine("Hello, World!");
         }
     }
