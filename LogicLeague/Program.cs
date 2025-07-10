@@ -139,6 +139,10 @@
             var longestRepeatingCharacter = LongestRepeatingCharacter.CharacterReplacement("AABABBA", 1);
             var longestRepeatingCharacter2 = LongestRepeatingCharacter.CharacterReplacement("ABAB", 2);
 
+            var validParenthesis = ValidParantheses.IsValid("()");
+            var validParenthesis1 = ValidParantheses.IsValid("{{{{{}}");
+            var validParenthesis2 = ValidParantheses.IsValid("()[]{}");
+
             Console.WriteLine("Hello, World!");
         }
     }
