@@ -6,6 +6,9 @@
         {
             var profit = BuySellStock.MaxProfit([7, 1, 5, 3, 6, 4]);
 
+            var profit1 = BuySellStock.MaxProfitV2([7, 1, 5, 3, 6, 4]);
+            var profit2 = BuySellStock.MaxProfitV2([7, 6, 4, 3, 1]);
+
             var contains = FindDuplicate.ContainsDuplicate([1, 2, 3, 1]);
 
             var contains2 = FindDuplicate.ContainsNearbyDuplicate([1, 2, 3, 1, 2, 3], 2);
@@ -30,6 +33,7 @@
             var maxProduct = MaximumProduct.MaxProduct([2, 3, -2, 4]);
 
             var minInRotatedArray = FindMinimumInRotatedArray.FindMin([2, 1]);
+            var minInRotatedArray1 = FindMinimumInRotatedArray.FindMin([6, 1, 2, 3, 4, 5]);
 
             var searchTarget = SearchInRotatedArray.Search([4, 5, 6, 7, 0, 1, 2], 3);
             var searchTarget2 = SearchInRotatedArray.Search([3, 1], 1);

@@ -58,7 +58,7 @@ namespace LogicLeague
         // Sliding window concept
         public static bool ContainsNearbyDuplicateV2(int[] nums, int k)
         {
-            HashSet<int> elements = [];
+            HashSet<int> elements = new(k);
 
             for (int index = 0; index < nums.Length; index++)
             {

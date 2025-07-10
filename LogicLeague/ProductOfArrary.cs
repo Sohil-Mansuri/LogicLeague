@@ -87,5 +87,28 @@ namespace LogicLeague
 
             return result;
         }
+
+
+        //better one
+        public static int[] ProductExceptSelfV3(int[] nums)
+        {
+            int[] result = new int[nums.Length];
+
+            result[0] = 1;
+            for (int index = 1; index < nums.Length; index++)
+            {
+                result[index] = result[index - 1] * nums[index - 1];
+            }
+
+            int suffixProduct = 1;
+
+            for (int index = nums.Length - 1; index >= 0; index--)
+            {
+                result[index] = result[index] * suffixProduct;
+                suffixProduct *= nums[index];
+            }
+
+            return result;
+        }
     }
 }
