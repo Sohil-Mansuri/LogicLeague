@@ -9,41 +9,29 @@
         {
             if (nums.Length == 0) return 0;
 
-            HashSet<int> elements = [];
-
-            HashSet<int> visited = [];
+            HashSet<int> hash = [];
             int curretMaxLenght;
-
             int maximumLenth = 1;
 
             foreach (int num in nums)
             {
-                elements.Add(num);
+                hash.Add(num);
             }
 
-            for (int index = 0; index < nums.Length; index++)
+            foreach (var item in hash)
             {
-                if (visited.Contains(nums[index])) continue;
-                else
-                    visited.Add(nums[index]);
-                if (elements.Contains(nums[index] - 1)) continue;
+                if (hash.Contains(item - 1)) continue;
                 else
                 {
                     curretMaxLenght = 1;
-                    int currentElement = nums[index];
-                    int increment = 1;
-                    while (elements.Contains(currentElement + increment))
-                    {
+                    while(hash.Contains(item + curretMaxLenght))
                         curretMaxLenght++;
-                        increment++;
-                    }
 
-                    maximumLenth = Math.Max(curretMaxLenght, maximumLenth);
+                    maximumLenth = Math.Max(maximumLenth, curretMaxLenght);
                 }
             }
 
             return maximumLenth;
-
         }
     }
 }
