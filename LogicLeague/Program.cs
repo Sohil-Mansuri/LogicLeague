@@ -155,6 +155,18 @@
             var minimumWindowSubstring = MinimumWindowSubstring.MinWindow("ADOBECODEBANC", "ABC");
             var minimumWindowSubstring2 = MinimumWindowSubstring.MinWindow("A", "B");
 
+            var validPalindrome = ValidPalindrome.IsPalindrome("A man, a plan, a canal: Panama");
+            var validPalindrome2 = ValidPalindrome.IsPalindrome("race a car");
+
+
+            var longestPalindrome = LongestPalindromSubstring.LongestPalindrome("abba");
+            var longestPalindrome2 = LongestPalindromSubstring.LongestPalindrome("bhabbagd");
+            var longestPalindrome3 = LongestPalindromSubstring.LongestPalindrome("abrbadaadab");
+            var longestPalindrome4 = LongestPalindromSubstring.LongestPalindrome("ebbabad");
+            var longestPalindrome5 = LongestPalindromSubstring.LongestPalindrome("babad");
+            var longestPalindrome6 = LongestPalindromSubstring.LongestPalindrome("cbbd");
+            var longestPalindrome7 = LongestPalindromSubstring.LongestPalindrome("a");
+
             Console.WriteLine("Hello, World!");
         }
     }

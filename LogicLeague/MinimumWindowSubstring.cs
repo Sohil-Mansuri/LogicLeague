@@ -1,5 +1,8 @@
 ﻿namespace LogicLeague
 {
+    /// <summary>
+    /// https://leetcode.com/problems/minimum-window-substring/
+    /// </summary>
     internal class MinimumWindowSubstring
     {
         public static string MinWindow(string s, string t)
