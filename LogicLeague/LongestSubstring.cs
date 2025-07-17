@@ -66,5 +66,28 @@
 
             return maxLength;
         }
+
+        //Using Hash
+        public static int LengthOfLongestSubstringV3(string input)
+        {
+            int maxLength = 0;
+            int left = 0;
+            HashSet<char> hash = [];
+
+            for (int right = 0; right < input.Length; right++)
+            {
+                while (hash.Contains(input[right]))
+                {
+                    hash.Remove(input[left]);
+                    left++;
+                }
+
+                hash.Add(input[right]);
+
+                maxLength = Math.Max(maxLength, right - left + 1);
+            }
+
+            return maxLength;
+        }
     }
 }

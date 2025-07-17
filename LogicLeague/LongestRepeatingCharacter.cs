@@ -7,7 +7,7 @@
     {
         public static int CharacterReplacement(string s, int k)
         {
-            int[] elements = new int[26];
+            Span<int> elements = stackalloc int[26];
             int maxLength = 0;
             int left = 0;
 
@@ -20,9 +20,10 @@
                     elements[s[left] - 'A']--;
                     left++;
                 }
-
-                maxLength = Math.Max(maxLength, right - left + 1);
-
+                else
+                {
+                    maxLength = Math.Max(maxLength, right - left + 1);
+                }
             }
 
             return maxLength;

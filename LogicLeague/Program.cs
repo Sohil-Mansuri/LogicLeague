@@ -40,8 +40,6 @@
 
             var twoSumPart2 = TwoSumPart2.TwoSum([-1, 0], -1);
 
-            var longestSubsstring = LongestSubstring.LengthOfLongestSubstringV2("pwwkew");
-
 
             var threeSumResult = ThreeSumProblem.ThreeSum([-5, -5, 0, 1, 5]);
             var threeSumResult2 = ThreeSumProblem.ThreeSum([-1, 0, 1, 2, -1, -4]);
@@ -133,15 +131,29 @@
 
             var longestCommonPrefix = LongestCommonPrefixProblem.LongestCommonPrefix(["flower", "flow", "flight"]);
             var longestCommonPrefix2 = LongestCommonPrefixProblem.LongestCommonPrefix(["dog", "racecar", "car"]);
+            var longestCommonPrefix3 = LongestCommonPrefixProblem.LongestCommonPrefix(["flow", "flower", "floweght"]);
 
             var fizzBuzz = FizzBuzzProblem.FizzBuzz(15);
 
             var longestRepeatingCharacter = LongestRepeatingCharacter.CharacterReplacement("AABABBA", 1);
             var longestRepeatingCharacter2 = LongestRepeatingCharacter.CharacterReplacement("ABAB", 2);
 
+            var longestSubsstring = LongestSubstring.LengthOfLongestSubstringV2("pwwkew");
+            var longestSubsstring0 = LongestSubstring.LengthOfLongestSubstringV2("dvdf");
+
+            var longestSubsstring1 = LongestSubstring.LengthOfLongestSubstring("pwwkew");
+            var longestSubsstring2 = LongestSubstring.LengthOfLongestSubstring("dvdf");
+
+            var longestSubsstring4 = LongestSubstring.LengthOfLongestSubstringV3("pwwkew");
+            var longestSubsstring5 = LongestSubstring.LengthOfLongestSubstringV3("pwwwwwwkew");
+            var longestSubsstring6 = LongestSubstring.LengthOfLongestSubstringV3("dvdf");
+
             var validParenthesis = ValidParantheses.IsValid("()");
             var validParenthesis1 = ValidParantheses.IsValid("{{{{{}}");
             var validParenthesis2 = ValidParantheses.IsValid("()[]{}");
+
+            var minimumWindowSubstring = MinimumWindowSubstring.MinWindow("ADOBECODEBANC", "ABC");
+            var minimumWindowSubstring2 = MinimumWindowSubstring.MinWindow("A", "B");
 
             Console.WriteLine("Hello, World!");
         }

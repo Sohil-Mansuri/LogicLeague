@@ -10,8 +10,8 @@
             if (nums.Length == 0) return 0;
 
             HashSet<int> hash = [];
-            int curretMaxLenght;
-            int maximumLenth = 1;
+            int curretMaxLength;
+            int maximumLength = 1;
 
             foreach (int num in nums)
             {
@@ -23,15 +23,15 @@
                 if (hash.Contains(item - 1)) continue;
                 else
                 {
-                    curretMaxLenght = 1;
-                    while(hash.Contains(item + curretMaxLenght))
-                        curretMaxLenght++;
+                    curretMaxLength = 1;
+                    while(hash.Contains(item + curretMaxLength))
+                        curretMaxLength++;
 
-                    maximumLenth = Math.Max(maximumLenth, curretMaxLenght);
+                    maximumLength = Math.Max(maximumLength, curretMaxLength);
                 }
             }
 
-            return maximumLenth;
+            return maximumLength;
         }
     }
 }

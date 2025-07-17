@@ -7,7 +7,7 @@
     {
         public static string LongestCommonPrefix(string[] strs)
         {
-            if (strs is null || strs.Length == 0) return null;
+            if (strs is null || strs.Length == 0) return "";
 
             string prefix = strs[0];
 
