@@ -173,10 +173,15 @@
 
 
             var head = ListNode.CreateList([1, 2, 2, 1]);
-            var palindromeLinkedList = PalindromeLinkedList.IsPalindrome(head);
+            var palindromeLinkedList = PalindromeLinkedList.IsPalindromeV2(head);
+            var palindromeLinkedList12 = PalindromeLinkedList.IsPalindrome(head);
+
+            var head4 = ListNode.CreateList([1, 1, 0, 0, 1]);
+            var palindromeLinkedList14 = PalindromeLinkedList.IsPalindromeV2(head4);
 
             var head1 = ListNode.CreateList([1, 2]);
             var palindromeLinkedList2 = PalindromeLinkedList.IsPalindrome(head1);
+            var palindromeLinkedList13 = PalindromeLinkedList.IsPalindrome(head1);
 
 
             var head3 = ListNode.CreateList([1, 2, 3]);

@@ -7,9 +7,8 @@
     {
         public static bool IsPalindrome(ListNode head)
         {
-            if (head == null) return false;
+            if (head == null || head.next == null) return true;
 
-            if (head.next == null) return true;
             var current = head;
 
             Stack<int> stack = [];
@@ -30,6 +29,57 @@
             }
 
             return stack.Count == 0;
+        }
+
+        public static bool IsPalindromeV2(ListNode head)
+        {
+            if (head == null || head.next == null) return true;
+
+            ListNode slow = head;
+            ListNode fast = head;
+
+            while (fast.next != null && fast.next.next != null)
+            {
+                slow = slow.next;
+                fast = fast.next.next;
+            }
+
+            var otherHalfHead = Reverse(slow.next);
+
+            ListNode firstHead = head;
+            ListNode secondHead = otherHalfHead;
+
+            while (secondHead != null)
+            {
+                if (firstHead.val != secondHead.val)
+                {
+                    Reverse(otherHalfHead);
+                    return false;
+                }
+
+                secondHead = secondHead.next;
+                firstHead = firstHead.next;
+            }
+
+
+            Reverse(otherHalfHead);
+            return true;
+        }
+
+        private static ListNode Reverse(ListNode head)
+        {
+            ListNode prev = null;
+            ListNode current = head;
+
+            while (current != null)
+            {
+                var nextNode = current.next;
+                current.next = prev;
+                prev = current;
+                current = nextNode;
+            }
+
+            return prev!;
         }
     }
 
