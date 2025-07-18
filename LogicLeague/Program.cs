@@ -171,6 +171,20 @@
             var palindromicSubstrings1 = PalindromicSubstrings.CountSubstrings("aaa");
             var palindromicSubstrings2 = PalindromicSubstrings.CountSubstrings("fjskfjsksjs");
 
+
+            var head = ListNode.CreateList([1, 2, 2, 1]);
+            var palindromeLinkedList = PalindromeLinkedList.IsPalindrome(head);
+
+            var head1 = ListNode.CreateList([1, 2]);
+            var palindromeLinkedList2 = PalindromeLinkedList.IsPalindrome(head1);
+
+
+            var head3 = ListNode.CreateList([1, 2, 3]);
+            var reh2 = ListNode.ReverseV2(head3);
+            var reH = ListNode.Reverse(head3);
+
+
+
             Console.WriteLine("Hello, World!");
         }
     }
