@@ -167,6 +167,10 @@
             var longestPalindrome6 = LongestPalindromSubstring.LongestPalindrome("cbbd");
             var longestPalindrome7 = LongestPalindromSubstring.LongestPalindrome("a");
 
+            var palindromicSubstrings = PalindromicSubstrings.CountSubstrings("abbc");
+            var palindromicSubstrings1 = PalindromicSubstrings.CountSubstrings("aaa");
+            var palindromicSubstrings2 = PalindromicSubstrings.CountSubstrings("fjskfjsksjs");
+
             Console.WriteLine("Hello, World!");
         }
     }
