@@ -189,6 +189,7 @@
             var reH = ListNode.Reverse(head3);
 
 
+            var textJustification = TestJustification.FullJustify(["This", "is", "an", "example", "of", "text", "justification."], 16);
 
             Console.WriteLine("Hello, World!");
         }
