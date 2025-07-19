@@ -191,6 +191,8 @@
 
             var textJustification = TestJustification.FullJustify(["This", "is", "an", "example", "of", "text", "justification."], 16);
 
+            var letterCombination = LetterCombination.LetterCombinations("23");
+
             Console.WriteLine("Hello, World!");
         }
     }
