@@ -198,6 +198,10 @@
 
             var climbingStairs = ClimbingStairs.ClimbStairs(3);
 
+            var minCostofClimbingStairs = MinCostClimblingStairs.MinCostClimbingStairs([5, 1, 10, 2, 1]);
+            var minCostofClimbingStairs1 = MinCostClimblingStairs.MinCostClimbingStairs([1, 100, 1, 1, 1, 100, 1, 1, 100, 1]);
+            var minCostofClimbingStairs2 = MinCostClimblingStairs.MinCostClimbingStairs([10, 15, 20]);
+
             Console.WriteLine("Hello, World!");
         }
     }
