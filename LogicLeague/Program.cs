@@ -212,6 +212,7 @@
             var decodeWays3 = DecodeWays.NumDecodingsV2("456");
             var decodeWays4 = DecodeWays.NumDecodingsV2("122016");
 
+            var pascalTriangle = PascalsTriangle.Generate(5);
             Console.WriteLine("Hello, World!");
         }
     }
