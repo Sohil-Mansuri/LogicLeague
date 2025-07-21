@@ -202,6 +202,16 @@
             var minCostofClimbingStairs1 = MinCostClimblingStairs.MinCostClimbingStairs([1, 100, 1, 1, 1, 100, 1, 1, 100, 1]);
             var minCostofClimbingStairs2 = MinCostClimblingStairs.MinCostClimbingStairs([10, 15, 20]);
 
+            var coinChange = CoinChangeProblem.CoinChange([1, 2, 5], 11);
+            var coinChange2 = CoinChangeProblem.CoinChange([1, 3, 5, 6], 8);
+            var coinChange3 = CoinChangeProblem.CoinChange([2], 3);
+
+            var decodeWays = DecodeWays.NumDecodings("456");
+            var decodeWays2 = DecodeWays.NumDecodings("122016");
+
+            var decodeWays3 = DecodeWays.NumDecodingsV2("456");
+            var decodeWays4 = DecodeWays.NumDecodingsV2("122016");
+
             Console.WriteLine("Hello, World!");
         }
     }
