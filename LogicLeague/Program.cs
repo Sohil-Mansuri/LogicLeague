@@ -213,6 +213,12 @@
             var decodeWays4 = DecodeWays.NumDecodingsV2("122016");
 
             var pascalTriangle = PascalsTriangle.Generate(5);
+
+            var wordBreak = WordBreakProblem.WordBreak("espn", ["e", "sp", "n"]);
+            var wordBreak1= WordBreakProblem.WordBreak("leetcode", ["leet", "code"]);
+            var wordBreak2= WordBreakProblem.WordBreak("applepenapple", ["apple", "pen"]);
+            var wordBreak3= WordBreakProblem.WordBreak("catsandog", ["cats", "dog", "sand", "and", "cat"]);
+            
             Console.WriteLine("Hello, World!");
         }
     }
