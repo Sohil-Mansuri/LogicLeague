@@ -234,7 +234,7 @@
             var uniquePaths = UniquePathsProblem.UniquePaths(3, 3);
             var uniquePaths2 = UniquePathsProblem.UniquePaths(1, 1);
 
-
+            var generateParenthesis1 = GenerateParenthesisProblem.GenerateParenthesis(5);
             Console.WriteLine("Hello, World!");
         }
     }
