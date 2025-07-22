@@ -231,6 +231,9 @@
             var houseRobber7 = HouseRobber2.Rob([1, 2, 15, 11, 3, 6, 10]);
             var houseRobber8 = HouseRobber2.Rob([1]);
 
+            var uniquePaths = UniquePathsProblem.UniquePaths(3, 3);
+            var uniquePaths2 = UniquePathsProblem.UniquePaths(1, 1);
+
 
             Console.WriteLine("Hello, World!");
         }
