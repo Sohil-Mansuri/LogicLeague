@@ -27,7 +27,6 @@ namespace LogicLeague
                 return;
             }
 
-
             for (int index = start; index < candidates.Length; index++)
             {
                 combination.Add(candidates[index]);

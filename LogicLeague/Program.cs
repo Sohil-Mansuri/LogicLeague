@@ -215,11 +215,22 @@
             var pascalTriangle = PascalsTriangle.Generate(5);
 
             var wordBreak = WordBreakProblem.WordBreak("espn", ["e", "sp", "n"]);
-            var wordBreak1= WordBreakProblem.WordBreak("leetcode", ["leet", "code"]);
-            var wordBreak2= WordBreakProblem.WordBreak("applepenapple", ["apple", "pen"]);
-            var wordBreak3= WordBreakProblem.WordBreak("catsandog", ["cats", "dog", "sand", "and", "cat"]);
+            var wordBreak1 = WordBreakProblem.WordBreak("leetcode", ["leet", "code"]);
+            var wordBreak2 = WordBreakProblem.WordBreak("applepenapple", ["apple", "pen"]);
+            var wordBreak3 = WordBreakProblem.WordBreak("catsandog", ["cats", "dog", "sand", "and", "cat"]);
 
             var combinationSum = CombinationSumProblem.CombinationSum([2, 5, 6], 10);
+
+            var houseRobber = HouseRobber.RobV2([1, 2, 3, 1]);
+            var houseRobber2 = HouseRobber.RobV2([2, 7, 9, 3, 1]);
+            var houseRobber3 = HouseRobber.RobV2([2, 1, 1, 2]);
+
+            var houseRobber4 = HouseRobber2.Rob([1, 2, 3, 1]);
+            var houseRobber5 = HouseRobber2.Rob([2, 7, 9, 3, 1]);
+            var houseRobber6 = HouseRobber2.Rob([2, 1, 1, 2]);
+            var houseRobber7 = HouseRobber2.Rob([1, 2, 15, 11, 3, 6, 10]);
+            var houseRobber8 = HouseRobber2.Rob([1]);
+
 
             Console.WriteLine("Hello, World!");
         }
