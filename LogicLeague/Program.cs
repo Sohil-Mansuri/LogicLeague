@@ -218,7 +218,9 @@
             var wordBreak1= WordBreakProblem.WordBreak("leetcode", ["leet", "code"]);
             var wordBreak2= WordBreakProblem.WordBreak("applepenapple", ["apple", "pen"]);
             var wordBreak3= WordBreakProblem.WordBreak("catsandog", ["cats", "dog", "sand", "and", "cat"]);
-            
+
+            var combinationSum = CombinationSumProblem.CombinationSum([2, 5, 6], 10);
+
             Console.WriteLine("Hello, World!");
         }
     }
