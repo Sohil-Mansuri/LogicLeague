@@ -235,6 +235,17 @@
             var uniquePaths2 = UniquePathsProblem.UniquePaths(1, 1);
 
             var generateParenthesis1 = GenerateParenthesisProblem.GenerateParenthesis(5);
+
+            var jumpGame = JumpGame.CanJump([2, 3, 1, 0, 2, 5]);
+            var jumpGame2 = JumpGame.CanJump([3, 2, 1, 0, 4]);
+            var jumpGame3 = JumpGame.CanJump([2, 3, 1, 1, 4]);
+            var jumpGame4 = JumpGame.CanJump([2]);
+
+            var jumpGame5 = JumpGame.CanJumpV2([2, 3, 1, 0, 2, 5]);
+            var jumpGame6 = JumpGame.CanJumpV2([3, 2, 1, 0, 4]);
+            var jumpGame7 = JumpGame.CanJumpV2([2, 3, 1, 1, 4]);
+            var jumpGame8 = JumpGame.CanJumpV2([2]);
+
             Console.WriteLine("Hello, World!");
         }
     }
