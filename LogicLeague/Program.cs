@@ -246,6 +246,14 @@
             var jumpGame7 = JumpGame.CanJumpV2([2, 3, 1, 1, 4]);
             var jumpGame8 = JumpGame.CanJumpV2([2]);
 
+
+            var jumpGame21 = JumGame2.Jump([1, 3, 1, 3, 1, 1, 1, 2]);
+            var jumpGame22 = JumGame2.Jump([2, 3, 0, 1, 4]);
+            var jumpGame23 = JumGame2.Jump([2, 3, 1, 1, 4]);
+
+            var raceProblem = RaceCarProblemV2.Racecar(6);
+
+
             Console.WriteLine("Hello, World!");
         }
     }
