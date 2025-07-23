@@ -267,6 +267,10 @@
             var longestMaxiSequence44 = LongesMaximumSubSequence.LengthOfLISV2([4, 10, 4, 3, 8, 9]);
             var longestMaxiSequence55 = LongesMaximumSubSequence.LengthOfLISV2([1, 3, 6, 7, 9, 4, 10, 5, 6]);
 
+
+            var canPartition = PartitionEqualSubsetSum.CanPartition([1, 5, 11, 5]);
+            var canPartition2 = PartitionEqualSubsetSum.CanPartition([1, 2, 3, 5]);
+
             Console.WriteLine("Hello, World!");
         }
     }
