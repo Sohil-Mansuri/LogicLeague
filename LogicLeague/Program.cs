@@ -254,6 +254,19 @@
             var raceProblem = RaceCarProblemV2.Racecar(6);
 
 
+            var longestMaxiSequence = LongesMaximumSubSequence.LengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]);
+            var longestMaxiSequence2 = LongesMaximumSubSequence.LengthOfLIS([0, 1, 0, 3, 2, 3]);
+            var longestMaxiSequence3 = LongesMaximumSubSequence.LengthOfLIS([7, 7, 7, 7, 7, 7, 7]);
+            var longestMaxiSequence4 = LongesMaximumSubSequence.LengthOfLIS([4, 10, 4, 3, 8, 9]);
+            var longestMaxiSequence5 = LongesMaximumSubSequence.LengthOfLIS([1, 3, 6, 7, 9, 4, 10, 5, 6]);
+
+
+            var longestMaxiSequence22 = LongesMaximumSubSequence.LengthOfLISV2([10, 9, 2, 5, 3, 7, 101, 18]);
+            var longestMaxiSequence23 = LongesMaximumSubSequence.LengthOfLISV2([0, 1, 0, 3, 2, 3]);
+            var longestMaxiSequence33 = LongesMaximumSubSequence.LengthOfLISV2([7, 7, 7, 7, 7, 7, 7]);
+            var longestMaxiSequence44 = LongesMaximumSubSequence.LengthOfLISV2([4, 10, 4, 3, 8, 9]);
+            var longestMaxiSequence55 = LongesMaximumSubSequence.LengthOfLISV2([1, 3, 6, 7, 9, 4, 10, 5, 6]);
+
             Console.WriteLine("Hello, World!");
         }
     }
