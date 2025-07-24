@@ -275,6 +275,8 @@
             var isRegularExpressionMatch = RegularExpressionMatching.IsMatch("faangm", "fa*n.m");
             var isRegularExpressionMatch2 = RegularExpressionMatching.IsMatch("ab", "a*");
 
+
+            var knapSackProblem = KnapSackProblem.Knapsack([3, 4, 5], [30, 50, 60], 8);
             Console.WriteLine("Hello, World!");
         }
     }
