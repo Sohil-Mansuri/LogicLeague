@@ -271,6 +271,10 @@
             var canPartition = PartitionEqualSubsetSum.CanPartition([1, 5, 11, 5]);
             var canPartition2 = PartitionEqualSubsetSum.CanPartition([1, 2, 3, 5]);
 
+
+            var isRegularExpressionMatch = RegularExpressionMatching.IsMatch("faangm", "fa*n.m");
+            var isRegularExpressionMatch2 = RegularExpressionMatching.IsMatch("ab", "a*");
+
             Console.WriteLine("Hello, World!");
         }
     }
