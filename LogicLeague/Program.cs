@@ -282,6 +282,10 @@
             var mergeInterval2 = MergeIntervals.Merge([[1, 4], [5, 6]]);
             var mergeInterval3 = MergeIntervals.Merge([[1, 4], [0, 4]]);
             var mergeInterval4 = MergeIntervals.Merge([[1, 4], [0, 0]]);
+
+            var insertIntervals = InsertInterval.Insert([[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]], [4, 8]);
+            var insertIntervals2 = InsertInterval.Insert([[1, 2], [3, 6], [7, 9], [10, 11], [12, 16]], [4, 5]);
+            var insertIntervals4 = InsertInterval.Insert([], [4, 5]);
             Console.WriteLine("Hello, World!");
         }
     }
