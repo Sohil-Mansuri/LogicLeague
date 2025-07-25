@@ -277,6 +277,11 @@
 
 
             var knapSackProblem = KnapSackProblem.Knapsack([3, 4, 5], [30, 50, 60], 8);
+
+            var mergeInterval = MergeIntervals.Merge([[1, 3], [2, 6], [8, 10], [15, 18]]);
+            var mergeInterval2 = MergeIntervals.Merge([[1, 4], [5, 6]]);
+            var mergeInterval3 = MergeIntervals.Merge([[1, 4], [0, 4]]);
+            var mergeInterval4 = MergeIntervals.Merge([[1, 4], [0, 0]]);
             Console.WriteLine("Hello, World!");
         }
     }
