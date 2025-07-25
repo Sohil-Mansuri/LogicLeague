@@ -286,6 +286,10 @@
             var insertIntervals = InsertInterval.Insert([[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]], [4, 8]);
             var insertIntervals2 = InsertInterval.Insert([[1, 2], [3, 6], [7, 9], [10, 11], [12, 16]], [4, 5]);
             var insertIntervals4 = InsertInterval.Insert([], [4, 5]);
+
+            var nonOverlapping = NonOverlappingIntervals.EraseOverlapIntervals([[1, 2], [1, 2], [1, 2]]);
+            var nonOverlapping2 = NonOverlappingIntervals.EraseOverlapIntervals([[1, 2], [2, 3], [3, 4], [1, 3]]);
+            var nonOverlapping3 = NonOverlappingIntervals.EraseOverlapIntervals([[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]]);
             Console.WriteLine("Hello, World!");
         }
     }
