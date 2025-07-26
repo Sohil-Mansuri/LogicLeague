@@ -302,6 +302,11 @@ namespace LogicLeague
             var dailyTemptures2 = DailyTempretures.DailyTemperatures([30, 40, 50, 60]);
             var dailyTemptures3 = DailyTempretures.DailyTemperatures([30, 60, 90]);
 
+
+            var reversePolishEv = ReversePolishNotation.EvalRPN(["2", "1", "+", "3", "*"]);
+            var reversePolishEv2 = ReversePolishNotation.EvalRPN(["10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"]);
+            var reversePolishEv3 = ReversePolishNotation.EvalRPN(["4", "13", "5", "/", "+"]);
+
             Console.WriteLine("Hello, World!");
         }
     }
