@@ -294,6 +294,17 @@
 
             var squareSum = HappyNumber.IsHappy(2);
             var squareSum2 = HappyNumber.IsHappy(19);
+
+            var stack = new StackImplementation();
+
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
+            stack.Push(4);
+
+            var top = stack.Pop();
+            var top2 = stack.Pop();
+
             Console.WriteLine("Hello, World!");
         }
     }
