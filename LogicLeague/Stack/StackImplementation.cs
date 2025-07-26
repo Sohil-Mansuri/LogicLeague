@@ -1,4 +1,4 @@
-﻿namespace LogicLeague
+﻿namespace LogicLeague.Stack
 {
     internal class StackImplementation
     {

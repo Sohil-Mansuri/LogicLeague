@@ -1,4 +1,6 @@
-﻿namespace LogicLeague
+﻿using LogicLeague.Stack;
+
+namespace LogicLeague
 {
     internal class Program
     {
@@ -295,15 +297,10 @@
             var squareSum = HappyNumber.IsHappy(2);
             var squareSum2 = HappyNumber.IsHappy(19);
 
-            var stack = new StackImplementation();
 
-            stack.Push(1);
-            stack.Push(2);
-            stack.Push(3);
-            stack.Push(4);
-
-            var top = stack.Pop();
-            var top2 = stack.Pop();
+            var dailyTemptures = DailyTempretures.DailyTemperatures([73, 74, 75, 71, 69, 72, 76, 73]);
+            var dailyTemptures2 = DailyTempretures.DailyTemperatures([30, 40, 50, 60]);
+            var dailyTemptures3 = DailyTempretures.DailyTemperatures([30, 60, 90]);
 
             Console.WriteLine("Hello, World!");
         }
