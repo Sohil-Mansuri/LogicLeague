@@ -292,6 +292,8 @@
             var nonOverlapping3 = NonOverlappingIntervals.EraseOverlapIntervals([[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]]);
 
 
+            var squareSum = HappyNumber.IsHappy(2);
+            var squareSum2 = HappyNumber.IsHappy(19);
             Console.WriteLine("Hello, World!");
         }
     }
