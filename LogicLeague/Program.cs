@@ -328,6 +328,9 @@ namespace LogicLeague
             var carfleet3 = CarFleetProblem.CarFleet(10, [3], [3]);
             var carfleet4 = CarFleetProblem.CarFleet(10, [6, 8], [3, 2]);
 
+
+            var minRemoveToMakeItValid = MinimumValidParenthesis.MinRemoveToMakeValid("p)a(r))+((h)");
+            var minRemoveToMakeItValid2 = MinimumValidParenthesis.MinRemoveToMakeValid("))((");
             Console.WriteLine("Hello, World!");
         }
     }
