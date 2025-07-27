@@ -335,10 +335,16 @@ namespace LogicLeague
 
             var maxHistogramArea = LargestRectangleInHistogram.LargestRectangleArea([3, 2, 5, 6, 7, 4, 6, 3]);
             var maxHistogramArea2 = LargestRectangleInHistogram.LargestRectangleArea([2, 1, 5, 6, 2, 3]);
-            var maxHistogramArea3 = LargestRectangleInHistogram.LargestRectangleArea([4,3]);
+            var maxHistogramArea3 = LargestRectangleInHistogram.LargestRectangleArea([4, 3]);
             var maxHistogramArea4 = LargestRectangleInHistogram.LargestRectangleArea([2, 4]);
             var maxHistogramArea5 = LargestRectangleInHistogram.LargestRectangleArea([10]);
 
+
+            var longestParentheses = LongestValidParenthesesProblem.LongestValidParentheses("(()");
+            var longestParentheses2 = LongestValidParenthesesProblem.LongestValidParentheses(")()())");
+            var longestParentheses3 = LongestValidParenthesesProblem.LongestValidParentheses("");
+            var longestParentheses4 = LongestValidParenthesesProblem.LongestValidParentheses("()(()()");
+            var longestParentheses5 = LongestValidParenthesesProblem.LongestValidParentheses("()(()");
             Console.WriteLine("Hello, World!");
         }
     }
