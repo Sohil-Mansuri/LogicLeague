@@ -307,6 +307,27 @@ namespace LogicLeague
             var reversePolishEv2 = ReversePolishNotation.EvalRPN(["10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"]);
             var reversePolishEv3 = ReversePolishNotation.EvalRPN(["4", "13", "5", "/", "+"]);
 
+
+            var minStack = new MinStack();
+
+            minStack.Push(-1);
+            var tom3 = minStack.Top();
+            var min4 = minStack.GetMin();
+
+            minStack.Push(-2);
+            minStack.Push(0);
+            minStack.Push(-3);
+
+            var min1 = minStack.GetMin();
+            minStack.Pop();
+            var top1 = minStack.Top();
+            var min2 = minStack.GetMin();
+
+            var carfleet = CarFleetProblem.CarFleet(12, [10, 8, 0, 5, 3], [2, 4, 1, 1, 3]);
+            var carfleet2 = CarFleetProblem.CarFleet(100, [0, 2, 4], [4, 2, 1]);
+            var carfleet3 = CarFleetProblem.CarFleet(10, [3], [3]);
+            var carfleet4 = CarFleetProblem.CarFleet(10, [6, 8], [3, 2]);
+
             Console.WriteLine("Hello, World!");
         }
     }
