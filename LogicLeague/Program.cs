@@ -331,6 +331,14 @@ namespace LogicLeague
 
             var minRemoveToMakeItValid = MinimumValidParenthesis.MinRemoveToMakeValid("p)a(r))+((h)");
             var minRemoveToMakeItValid2 = MinimumValidParenthesis.MinRemoveToMakeValid("))((");
+
+
+            var maxHistogramArea = LargestRectangleInHistogram.LargestRectangleArea([3, 2, 5, 6, 7, 4, 6, 3]);
+            var maxHistogramArea2 = LargestRectangleInHistogram.LargestRectangleArea([2, 1, 5, 6, 2, 3]);
+            var maxHistogramArea3 = LargestRectangleInHistogram.LargestRectangleArea([4,3]);
+            var maxHistogramArea4 = LargestRectangleInHistogram.LargestRectangleArea([2, 4]);
+            var maxHistogramArea5 = LargestRectangleInHistogram.LargestRectangleArea([10]);
+
             Console.WriteLine("Hello, World!");
         }
     }
