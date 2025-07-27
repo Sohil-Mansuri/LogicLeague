@@ -345,6 +345,22 @@ namespace LogicLeague
             var longestParentheses3 = LongestValidParenthesesProblem.LongestValidParentheses("");
             var longestParentheses4 = LongestValidParenthesesProblem.LongestValidParentheses("()(()()");
             var longestParentheses5 = LongestValidParenthesesProblem.LongestValidParentheses("()(()");
+
+            var maxStack = new MaxStack();
+
+            maxStack.Push(1); maxStack.Push(2); maxStack.Push(6); maxStack.Push(3); maxStack.Push(4); maxStack.Push(7);
+
+            var top23 = maxStack.Peek();
+
+            var top24 = maxStack.Pop();
+
+            var top26 = maxStack.PeekMax();
+
+            var top27 = maxStack.PopMax();
+
+            var top28 = maxStack.Peek();
+
+            var top29 = maxStack.PeekMax();
             Console.WriteLine("Hello, World!");
         }
     }
