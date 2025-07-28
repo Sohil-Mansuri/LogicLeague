@@ -375,6 +375,10 @@ namespace LogicLeague
 
             var sortColors = SortColorsProblem.SortColors([2, 0, 2, 1, 1, 0]);
             var sortColors2 = SortColorsProblem.SortColors([2, 0, 1]);
+
+            var majorityElement = MajorityElementProblem.MajorityElement([3, 2, 3]);
+            var majorityElement2 = MajorityElementProblem.MajorityElement([2, 2, 1, 1, 1, 2, 2]);
+            var majorityElement3 = MajorityElementProblem.MajorityElement([6, 5, 5]);
             Console.WriteLine("Hello, World!");
         }
     }
