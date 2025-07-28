@@ -372,6 +372,9 @@ namespace LogicLeague
             var largestNumber5 = LargetNumber.LargestNumber([0, 0]);
 
             var mergeSort = MergeSortAlgo.Sort([3, 5, 2, 7, 9]);
+
+            var sortColors = SortColorsProblem.SortColors([2, 0, 2, 1, 1, 0]);
+            var sortColors2 = SortColorsProblem.SortColors([2, 0, 1]);
             Console.WriteLine("Hello, World!");
         }
     }
