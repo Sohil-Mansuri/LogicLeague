@@ -51,8 +51,11 @@ namespace LogicLeague
             var mergeSortedArray = MergeSortedArray.Merge([1, 2, 3,], [2, 5, 6]);
 
             var mergeSortedResult2 = MergeSortedArray.Merge([4, 5, 6, 0, 0, 0], 3, [1, 2, 3], 3);
-
             var mergeSortedResult = MergeSortedArray.Merge([0, 0, 0, 0, 0], 0, [1, 2, 3, 4, 5], 5);
+
+            var mergeSortedResult3 = MergeSortedArray.MergeV2([4, 5, 6, 0, 0, 0], 3, [1, 2, 3], 3);
+            var mergeSortedResult4 = MergeSortedArray.MergeV2([0, 0, 0, 0, 0], 0, [1, 2, 3, 4, 5], 5);
+
 
             var containerResult1 = ContainerWaterProblem.MaxArea([1, 8, 6, 2, 5, 4, 8, 3, 7]);
             var containerResult2 = ContainerWaterProblem.MaxArea([1, 1]);
@@ -361,6 +364,13 @@ namespace LogicLeague
             var top28 = maxStack.Peek();
 
             var top29 = maxStack.PeekMax();
+
+            var largestNumber = LargetNumber.LargestNumber([10, 2]);
+            var largestNumber2 = LargetNumber.LargestNumber([3, 30, 34, 5, 9]);
+            var largestNumber3 = LargetNumber.LargestNumber([3]);
+            var largestNumber4 = LargetNumber.LargestNumber([700000000, 500000000]);
+            var largestNumber5 = LargetNumber.LargestNumber([0, 0]);
+
             Console.WriteLine("Hello, World!");
         }
     }
