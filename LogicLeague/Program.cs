@@ -395,6 +395,10 @@ namespace LogicLeague
             var binarySearch = BinarySearch.Search([-1, 0, 3, 5, 9, 12], 9);
             var binarySearch2 = BinarySearch.Search([-1, 0, 3, 5, 9, 12], 2);
             var binarySearch3 = BinarySearch.Search([2], 2);
+
+            var searchIn2d1 = Search2DMetrix.SearchMatrix([[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 60]], 3);
+            var searchIn2d2 = Search2DMetrix.SearchMatrix([[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 60]], 13);
+            var searchIn2d3 = Search2DMetrix.SearchMatrix([[1, 1]], 2);
             Console.WriteLine("Hello, World!");
         }
     }
