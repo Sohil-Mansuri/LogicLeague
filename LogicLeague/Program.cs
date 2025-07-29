@@ -392,6 +392,9 @@ namespace LogicLeague
 
             var sortResult = LinkedListSort.SortList(head12);
 
+            var binarySearch = BinarySearch.Search([-1, 0, 3, 5, 9, 12], 9);
+            var binarySearch2 = BinarySearch.Search([-1, 0, 3, 5, 9, 12], 2);
+            var binarySearch3 = BinarySearch.Search([2], 2);
             Console.WriteLine("Hello, World!");
         }
     }
