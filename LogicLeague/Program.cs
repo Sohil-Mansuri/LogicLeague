@@ -379,6 +379,19 @@ namespace LogicLeague
             var majorityElement = MajorityElementProblem.MajorityElement([3, 2, 3]);
             var majorityElement2 = MajorityElementProblem.MajorityElement([2, 2, 1, 1, 1, 2, 2]);
             var majorityElement3 = MajorityElementProblem.MajorityElement([6, 5, 5]);
+
+            var list1 = ListNode.CreateList([2, 5, 7]);
+            var list2 = ListNode.CreateList([1, 3, 4, 9]);
+
+            //var combined = LinkedListSort.MergeList(list1, list2);
+            var listMid1 = LinkedListSort.FindMid(list1);
+            var listMid2 = LinkedListSort.FindMid(list2);
+
+
+            var head12 = ListNode.CreateList([4, 5, 7, 9, 1, 3, 5, 23]);
+
+            var sortResult = LinkedListSort.SortList(head12);
+
             Console.WriteLine("Hello, World!");
         }
     }

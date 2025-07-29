@@ -12,7 +12,7 @@
 
             for (int index = 0; index < nums.Length; index++)
             {
-                if (map.ContainsKey(nums[index])) map[nums[index]] += 1;
+                if (map.ContainsKey(nums[index])) map[nums[index]]++;
                 else
                 {
                     map[nums[index]] = 1;

@@ -50,6 +50,7 @@
                 right++;
             }
 
+            //add all elements back to main array
             for (int i = low; i <= high; i++)
             {
                 nums[i] = result[i - low];
