@@ -399,6 +399,10 @@ namespace LogicLeague
             var searchIn2d1 = Search2DMetrix.SearchMatrix([[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 60]], 3);
             var searchIn2d2 = Search2DMetrix.SearchMatrix([[1, 3, 5, 7], [10, 11, 16, 20], [23, 30, 34, 60]], 13);
             var searchIn2d3 = Search2DMetrix.SearchMatrix([[1, 1]], 2);
+
+
+            var kokoEatingBanana = KokoEatingBanana.MinEatingSpeed([3, 6, 7, 11], 8);
+            var kokoEatingBanana2 = KokoEatingBanana.MinEatingSpeed([30, 11, 23, 4, 20], 6);
             Console.WriteLine("Hello, World!");
         }
     }

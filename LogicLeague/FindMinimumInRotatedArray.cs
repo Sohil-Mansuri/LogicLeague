@@ -20,6 +20,7 @@
                 if (nums[left] < nums[right])
                 {
                     result = Math.Min(result, nums[left]);
+                    return result;
                 }
                 else
                 {
