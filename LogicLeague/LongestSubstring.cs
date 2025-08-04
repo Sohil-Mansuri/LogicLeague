@@ -89,5 +89,29 @@
 
             return maxLength;
         }
+
+        public static int LengthOfLongestSubstringV4(string input)
+        {
+            int maxLength = 0;
+            int left = 0;
+            HashSet<char> hash = [];
+            int right = 0;
+            while (right < input.Length)
+            {
+                if (hash.Contains(input[right]))
+                {
+                    hash.Remove(input[left]);
+                    left++;
+                }
+                else
+                {
+                    hash.Add(input[right]);
+                    maxLength = Math.Max(maxLength, right - left + 1);
+                    right++;
+                }
+            }
+
+            return maxLength;
+        }
     }
 }

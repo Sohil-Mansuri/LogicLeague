@@ -7,6 +7,8 @@
     {
         public static int MinEatingSpeed(int[] piles, int hour)
         {
+            SortedDictionary<int, int> test = [];
+
             int left = 1;
             int right = piles[0];
             for (int i = 1; i < piles.Length; i++)

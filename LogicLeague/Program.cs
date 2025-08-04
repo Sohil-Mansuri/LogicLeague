@@ -153,12 +153,17 @@ namespace LogicLeague
             var longestSubsstring5 = LongestSubstring.LengthOfLongestSubstringV3("pwwwwwwkew");
             var longestSubsstring6 = LongestSubstring.LengthOfLongestSubstringV3("dvdf");
 
+            var longestSubsstring44 = LongestSubstring.LengthOfLongestSubstringV4("pwwkew");
+            var longestSubsstring55 = LongestSubstring.LengthOfLongestSubstringV4("pwwwwwwkew");
+            var longestSubsstring66 = LongestSubstring.LengthOfLongestSubstringV4("dvdf");
+
             var validParenthesis = ValidParantheses.IsValid("()");
             var validParenthesis1 = ValidParantheses.IsValid("{{{{{}}");
             var validParenthesis2 = ValidParantheses.IsValid("()[]{}");
 
             var minimumWindowSubstring = MinimumWindowSubstring.MinWindow("ADOBECODEBANC", "ABC");
             var minimumWindowSubstring2 = MinimumWindowSubstring.MinWindow("A", "B");
+            var minimumWindowSubstring3 = MinimumWindowSubstring.MinWindow("ADDBEOEBANC", "ABC");
 
             var validPalindrome = ValidPalindrome.IsPalindrome("A man, a plan, a canal: Panama");
             var validPalindrome2 = ValidPalindrome.IsPalindrome("race a car");
@@ -257,6 +262,8 @@ namespace LogicLeague
             var jumpGame23 = JumGame2.Jump([2, 3, 1, 1, 4]);
 
             var raceProblem = RaceCarProblemV2.Racecar(6);
+            var raceProblem2 = RaceCarProblemV2.Racecar(8);
+            var raceProblem3 = RaceCarProblemV2.Racecar(2);
 
 
             var longestMaxiSequence = LongesMaximumSubSequence.LengthOfLIS([10, 9, 2, 5, 3, 7, 101, 18]);
@@ -271,10 +278,13 @@ namespace LogicLeague
             var longestMaxiSequence33 = LongesMaximumSubSequence.LengthOfLISV2([7, 7, 7, 7, 7, 7, 7]);
             var longestMaxiSequence44 = LongesMaximumSubSequence.LengthOfLISV2([4, 10, 4, 3, 8, 9]);
             var longestMaxiSequence55 = LongesMaximumSubSequence.LengthOfLISV2([1, 3, 6, 7, 9, 4, 10, 5, 6]);
+            var longestMaxiSequence66 = LongesMaximumSubSequence.LengthOfLISV2([10, 7, 8, 5, 16, 27, 9, 1, 13, 15]);
+
 
 
             var canPartition = PartitionEqualSubsetSum.CanPartition([1, 5, 11, 5]);
             var canPartition2 = PartitionEqualSubsetSum.CanPartition([1, 2, 3, 5]);
+            var canPartition3 = PartitionEqualSubsetSum.CanPartition([1, 2, 4,7]);
 
 
             var isRegularExpressionMatch = RegularExpressionMatching.IsMatch("faangm", "fa*n.m");
@@ -403,6 +413,32 @@ namespace LogicLeague
 
             var kokoEatingBanana = KokoEatingBanana.MinEatingSpeed([3, 6, 7, 11], 8);
             var kokoEatingBanana2 = KokoEatingBanana.MinEatingSpeed([30, 11, 23, 4, 20], 6);
+
+            var timeMap = new TimeMap();
+
+            timeMap.Set("foo", "bar", 1);
+            var get1 = timeMap.Get("foo", 1);
+            var get3 = timeMap.Get("foo", 3);
+
+            timeMap.Set("foo", "bar2", 4);
+            var get4 = timeMap.Get("foo", 4);
+            var get5 = timeMap.Get("foo", 5);
+
+            var get7 = timeMap.Get("food", 6);
+
+            var timeMap2 = new TimeMap();
+
+            timeMap2.Set("love", "high", 10);
+            timeMap2.Set("love", "low", 20);
+
+            var loveGet1 = timeMap2.Get("love", 5);
+            var loveGet2 = timeMap2.Get("love", 10);
+            var loveGet3 = timeMap2.Get("love", 15);
+            var loveGet4 = timeMap2.Get("love", 20);
+            var loveGet5 = timeMap2.Get("love", 25);
+
+            var subsets1 = SubSetsProblem.Subsets([1, 2,3]);
+            //[null,null,null,"","high","high","low","low"]
             Console.WriteLine("Hello, World!");
         }
     }
