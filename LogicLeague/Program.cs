@@ -284,7 +284,7 @@ namespace LogicLeague
 
             var canPartition = PartitionEqualSubsetSum.CanPartition([1, 5, 11, 5]);
             var canPartition2 = PartitionEqualSubsetSum.CanPartition([1, 2, 3, 5]);
-            var canPartition3 = PartitionEqualSubsetSum.CanPartition([1, 2, 4,7]);
+            var canPartition3 = PartitionEqualSubsetSum.CanPartition([1, 2, 4, 7]);
 
 
             var isRegularExpressionMatch = RegularExpressionMatching.IsMatch("faangm", "fa*n.m");
@@ -437,8 +437,33 @@ namespace LogicLeague
             var loveGet4 = timeMap2.Get("love", 20);
             var loveGet5 = timeMap2.Get("love", 25);
 
-            var subsets1 = SubSetsProblem.Subsets([1, 2,3]);
+            var subsets1 = SubSetsProblem.Subsets([1, 2, 3]);
             //[null,null,null,"","high","high","low","low"]
+
+            var detectSquares = new DetectSquares();
+            detectSquares.Add([3, 10]);
+            detectSquares.Add([11, 2]);
+            detectSquares.Add([3, 2]);
+            detectSquares.Add([11, 10]);
+            var squars = detectSquares.Count([11, 10]);
+            var squars2 = detectSquares.Count([14, 8]);
+            detectSquares.Add([11, 2]);
+            var squares = detectSquares.Count([11, 10]);
+
+            var detectSquares1 = new DetectSquares();
+            detectSquares1.Add([419, 351]);
+            detectSquares1.Add([798, 351]);
+            detectSquares1.Add([798, 730]);
+            var square3 = detectSquares1.Count([419, 730]);
+            detectSquares1.Add([998, 1]);
+            detectSquares1.Add([0, 999]);
+            detectSquares1.Add([998, 999]);
+
+            var squares4 = detectSquares1.Count([0, 1]);
+
+
+            var plusOne = PlusOneProblem.PlusOne([1, 3, 5]);
+            var plusOne2 = PlusOneProblem.PlusOne([9, 9, 9]);
             Console.WriteLine("Hello, World!");
         }
     }
