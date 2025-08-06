@@ -464,6 +464,14 @@ namespace LogicLeague
 
             var plusOne = PlusOneProblem.PlusOne([1, 3, 5]);
             var plusOne2 = PlusOneProblem.PlusOne([9, 9, 9]);
+
+            var pow1 = PowProblem.MyPow(2, 5);
+            var pow2 = PowProblem.MyPow(3, 2);
+            var pow3 = PowProblem.MyPow(2, 10);
+            var pow4 = PowProblem.MyPow(3, 3);
+            var pow5 = PowProblem.MyPow(2, -2);
+            var pow6 = PowProblem.MyPow(2, -2147483648);
+
             Console.WriteLine("Hello, World!");
         }
     }
