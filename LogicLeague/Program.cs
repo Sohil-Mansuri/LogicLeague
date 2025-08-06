@@ -481,6 +481,13 @@ namespace LogicLeague
 
             var subset2Problem = SubSet2Problem.SubsetsWithDup([1, 2, 3]);
             var subset2Problem2 = SubSet2Problem.SubsetsWithDup([1, 2, 2]);
+
+            var permutations12 = Permutation.PermuteV2([1, 2, 3]);
+            var permutations13 = Permutation.PermuteV2([0,1]);
+            var permutations15 = Permutation.PermuteV2([1]);
+
+            var combinationSum21 = CombinationSum2Problem.CombinationSum2([2, 3, 6], 8);
+            var combinationSum22 = CombinationSum2Problem.CombinationSum2([10, 1, 2, 7, 6, 1, 5], 8);
             Console.WriteLine("Hello, World!");
         }
     }
