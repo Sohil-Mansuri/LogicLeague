@@ -472,6 +472,8 @@ namespace LogicLeague
             var pow5 = PowProblem.MyPow(2, -2);
             var pow6 = PowProblem.MyPow(2, -2147483648);
 
+
+            var rotateImage = RotateImageProblem.Rotate([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
             Console.WriteLine("Hello, World!");
         }
     }
