@@ -474,6 +474,13 @@ namespace LogicLeague
 
 
             var rotateImage = RotateImageProblem.Rotate([[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
+
+            var setZeros = SetMetrixZeroProblem.SetZeroes([[1, 1, 1], [1, 0, 1], [1, 1, 1]]);
+            var setZeros2 = SetMetrixZeroProblem.SetZeroesV2([[1, 1, 1], [1, 0, 1], [1, 1, 1]]);
+            var setZeros3 = SetMetrixZeroProblem.SetZeroesV2([[1, 2, 3, 4], [5, 0, 7, 8], [0, 10, 11, 12], [13, 14, 15, 0]]);
+
+            var subset2Problem = SubSet2Problem.SubsetsWithDup([1, 2, 3]);
+            var subset2Problem2 = SubSet2Problem.SubsetsWithDup([1, 2, 2]);
             Console.WriteLine("Hello, World!");
         }
     }
