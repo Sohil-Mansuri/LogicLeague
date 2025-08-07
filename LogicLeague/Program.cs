@@ -492,6 +492,8 @@ namespace LogicLeague
             var palindromePartition = PalindromePartition.Partition("abc");
             var palindromePartition2 = PalindromePartition.Partition("aac");
             var palindromePartition3 = PalindromePartition.Partition("aabb");
+
+            //var wordSearch = WoardSearch.Exist([["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]], "ABCCED");
             Console.WriteLine("Hello, World!");
         }
     }
