@@ -488,6 +488,10 @@ namespace LogicLeague
 
             var combinationSum21 = CombinationSum2Problem.CombinationSum2([2, 3, 6], 8);
             var combinationSum22 = CombinationSum2Problem.CombinationSum2([10, 1, 2, 7, 6, 1, 5], 8);
+
+            var palindromePartition = PalindromePartition.Partition("abc");
+            var palindromePartition2 = PalindromePartition.Partition("aac");
+            var palindromePartition3 = PalindromePartition.Partition("aabb");
             Console.WriteLine("Hello, World!");
         }
     }
