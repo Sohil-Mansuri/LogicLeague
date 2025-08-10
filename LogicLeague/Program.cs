@@ -502,6 +502,28 @@ namespace LogicLeague
             var headOfTree = new TreeNode(1, second, third);
 
             var diameter = DiameterOfBinaryTreeProblem.DiameterOfBinaryTree(headOfTree);
+
+            var noOfIsland = NumberOfIsland.NumIslands([
+                                          ["1","1","1","1","0"],
+                                          ["1","1","0","1","0"],
+                                          ["1","1","0","0","0"],
+                                          ["0","0","0","0","0"]
+                                        ]);
+
+            var noOfIsland2 = NumberOfIsland.NumIslands([
+                                          ["1","1","0","0","0"],
+                                          ["1","1","0","0","0"],
+                                          ["0","0","1","0","0"],
+                                          ["0","0","0","1","1"]
+                                        ]);
+
+            var noOfIsland3 = NumberOfIsland.NumIslands([
+                                          ["0","0","0"],
+                                          ["0","1","1"],
+                                          ["0","0","0"]
+                            ]);
+
+
             Console.WriteLine("Hello, World!");
         }
     }
