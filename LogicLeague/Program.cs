@@ -483,7 +483,7 @@ namespace LogicLeague
             var subset2Problem2 = SubSet2Problem.SubsetsWithDup([1, 2, 2]);
 
             var permutations12 = Permutation.PermuteV2([1, 2, 3]);
-            var permutations13 = Permutation.PermuteV2([0,1]);
+            var permutations13 = Permutation.PermuteV2([0, 1]);
             var permutations15 = Permutation.PermuteV2([1]);
 
             var combinationSum21 = CombinationSum2Problem.CombinationSum2([2, 3, 6], 8);
@@ -494,6 +494,14 @@ namespace LogicLeague
             var palindromePartition3 = PalindromePartition.Partition("aabb");
 
             //var wordSearch = WoardSearch.Exist([["A", "B", "C", "E"], ["S", "F", "C", "S"], ["A", "D", "E", "E"]], "ABCCED");
+
+            var fourth = new TreeNode(4, null, null);
+            var fifth = new TreeNode(5, null, null);
+            var third = new TreeNode(3, null, null);
+            var second = new TreeNode(2, fourth, fifth);
+            var headOfTree = new TreeNode(1, second, third);
+
+            var diameter = DiameterOfBinaryTreeProblem.DiameterOfBinaryTree(headOfTree);
             Console.WriteLine("Hello, World!");
         }
     }
