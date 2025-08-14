@@ -554,6 +554,8 @@ namespace LogicLeague
             var kthLargest2 = KthLargestProblem.FindKthLargest([3, 2, 3, 1, 2, 4, 5, 5, 6], 4);
             var kthLargest4 = KthLargestProblem.FindKthLargest([3, 2], 4);
 
+            var kthClosest = ClosestPointOfOrigin.KClosest([[3, 3], [5, -1], [-2, 4]], 2);
+            var kthClosest1 = ClosestPointOfOrigin.KClosest([[1, 3], [-2, 2]], 1);
             Console.WriteLine("Hello, World!");
         }
     }
