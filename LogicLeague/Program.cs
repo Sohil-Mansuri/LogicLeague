@@ -526,6 +526,19 @@ namespace LogicLeague
 
             var nqueenProblem = NQueenProblem.SolveNQueens(4);
 
+            MaxHeap heap = new(10);
+
+            heap.Insert(20);
+            heap.Insert(15);
+            heap.Insert(30);
+            heap.Insert(10);
+
+            Console.WriteLine("Max: " + heap.Peek()); // 30
+
+            Console.WriteLine(heap.ExtractMax()); // 30
+            Console.WriteLine(heap.ExtractMax()); // 20
+            Console.WriteLine(heap.ExtractMax()); // 15
+
             Console.WriteLine("Hello, World!");
         }
     }
