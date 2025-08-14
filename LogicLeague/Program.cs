@@ -1,4 +1,5 @@
 ﻿using LogicLeague.Stack;
+using System.ComponentModel.DataAnnotations;
 
 namespace LogicLeague
 {
@@ -556,6 +557,33 @@ namespace LogicLeague
 
             var kthClosest = ClosestPointOfOrigin.KClosest([[3, 3], [5, -1], [-2, 4]], 2);
             var kthClosest1 = ClosestPointOfOrigin.KClosest([[1, 3], [-2, 2]], 1);
+
+            //var twitter = new Twitter();
+
+            //twitter.PostTweet(1, 5);
+            //var feed1 = twitter.GetNewsFeed(1);
+            //twitter.Follow(1, 2);
+            //twitter.PostTweet(2, 6);
+            //var feed2 = twitter.GetNewsFeed(1);
+            //twitter.Unfollow(1, 2);
+            //var feed3 = twitter.GetNewsFeed(1);
+
+            var twitter = new Twitter();
+
+            twitter.PostTweet(1, 5);
+            twitter.PostTweet(1, 3);
+            twitter.PostTweet(1, 101);
+            twitter.PostTweet(1, 13);
+            twitter.PostTweet(1, 10);
+            twitter.PostTweet(1, 2);
+            twitter.PostTweet(1, 94);
+            twitter.PostTweet(1, 505);
+            twitter.PostTweet(1, 333);
+            twitter.PostTweet(1, 22);
+            twitter.PostTweet(1, 11);
+
+            var feed1 = twitter.GetNewsFeed(1);
+
             Console.WriteLine("Hello, World!");
         }
     }
