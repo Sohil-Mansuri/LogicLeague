@@ -539,6 +539,21 @@ namespace LogicLeague
             Console.WriteLine(heap.ExtractMax()); // 20
             Console.WriteLine(heap.ExtractMax()); // 15
 
+            var kthLargest = new KthLargest(3, [4, 5, 8, 2]);
+
+            var out131 = kthLargest.Add(3);
+            var out132 = kthLargest.Add(5);
+            var out133 = kthLargest.Add(10);
+            var out134 = kthLargest.Add(9);
+            var out136 = kthLargest.Add(4);
+
+            var lastStone = LastStoneProblem.LastStoneWeight([2, 7, 4, 1, 8, 1]);
+
+
+            var kthLargest1 = KthLargestProblem.FindKthLargest([3, 2, 1, 5, 6, 4], 2);
+            var kthLargest2 = KthLargestProblem.FindKthLargest([3, 2, 3, 1, 2, 4, 5, 5, 6], 4);
+            var kthLargest4 = KthLargestProblem.FindKthLargest([3, 2], 4);
+
             Console.WriteLine("Hello, World!");
         }
     }
