@@ -1,5 +1,6 @@
 ﻿using LogicLeague.Stack;
 using System.ComponentModel.DataAnnotations;
+using static LogicLeague.EmployeeFreeTimeProblem;
 
 namespace LogicLeague
 {
@@ -587,6 +588,33 @@ namespace LogicLeague
             var taskSchedular = TaskSchedular.LeastInterval(["A", "A", "A", "B", "B", "B"], 3);
             var taskSchedular1 = TaskSchedular.LeastInterval(["A", "C", "A", "B", "D", "B"], 1);
             var taskSchedular3 = TaskSchedular.LeastInterval(["A", "B", "A"], 2);
+
+            var highFive = HighFiveProblem.
+                HighFive([[1, 91], [1, 92], [1, 60], [1, 65], [1, 87], [1, 100], [2, 93], [2, 97], [2, 77], [2, 100], [2, 76]]);
+
+            var schedule = new List<List<Interval>>
+        {
+            new List<Interval> { new Interval(1, 2), new Interval(5, 6) },
+            new List<Interval> { new Interval(1, 3) },
+            new List<Interval> { new Interval(4, 10) }
+        };
+
+            var schedule2 = new List<List<Interval>>
+        {
+            new List<Interval> { new Interval(1, 3), new Interval(6, 7) },
+            new List<Interval> { new Interval(2, 4) },
+            new List<Interval> { new Interval(2, 5), new Interval(9, 12) }
+        };
+
+            var schedule3 = new List<List<Interval>>
+        {
+            new List<Interval> { new Interval(1, 5) },
+            new List<Interval> { new Interval(2, 6) },
+            new List<Interval> { new Interval(1, 7) }
+        };
+            var freeTime = EmployeeFreeTimeProblem.EmployeeFreeTime(schedule);
+            var freeTime2 = EmployeeFreeTimeProblem.EmployeeFreeTime(schedule2);
+            var freeTime3 = EmployeeFreeTimeProblem.EmployeeFreeTime(schedule3);
             Console.WriteLine("Hello, World!");
         }
     }
