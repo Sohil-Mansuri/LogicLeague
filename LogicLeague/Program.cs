@@ -584,6 +584,9 @@ namespace LogicLeague
 
             var feed1 = twitter.GetNewsFeed(1);
 
+            var taskSchedular = TaskSchedular.LeastInterval(["A", "A", "A", "B", "B", "B"], 3);
+            var taskSchedular1 = TaskSchedular.LeastInterval(["A", "C", "A", "B", "D", "B"], 1);
+            var taskSchedular3 = TaskSchedular.LeastInterval(["A", "B", "A"], 2);
             Console.WriteLine("Hello, World!");
         }
     }
