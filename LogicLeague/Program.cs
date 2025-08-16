@@ -615,6 +615,9 @@ namespace LogicLeague
             var freeTime = EmployeeFreeTimeProblem.EmployeeFreeTime(schedule);
             var freeTime2 = EmployeeFreeTimeProblem.EmployeeFreeTime(schedule2);
             var freeTime3 = EmployeeFreeTimeProblem.EmployeeFreeTime(schedule3);
+
+            var maxSliWindow = SlidtingWindowMaximum.MaxSlidingWindow([1, 3, -1, -3, 5, 3, 6, 7], 3);
+            var maxSliWindow2 = SlidtingWindowMaximum.MaxSlidingWindow([1, -1], 1);
             Console.WriteLine("Hello, World!");
         }
     }
