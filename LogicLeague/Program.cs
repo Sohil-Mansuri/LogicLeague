@@ -618,6 +618,19 @@ namespace LogicLeague
 
             var maxSliWindow = SlidtingWindowMaximum.MaxSlidingWindow([1, 3, -1, -3, 5, 3, 6, 7], 3);
             var maxSliWindow2 = SlidtingWindowMaximum.MaxSlidingWindow([1, -1], 1);
+
+
+            var medianFinder = new MedianFinder();
+
+            medianFinder.AddNum(3);
+            medianFinder.AddNum(2);
+
+            var median = medianFinder.FindMedian();
+
+            medianFinder.AddNum(9);
+
+            var median2 = medianFinder.FindMedian();
+
             Console.WriteLine("Hello, World!");
         }
     }
