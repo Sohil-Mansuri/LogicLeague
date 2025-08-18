@@ -631,6 +631,11 @@ namespace LogicLeague
 
             var median2 = medianFinder.FindMedian();
 
+            var assignCookies = AssignCookies.FindContentChildren([1, 2, 3], [1, 1]);
+
+            var validString = ValidParenthesis.CheckValidString("(*)");
+            var validString2 = ValidParenthesis.CheckValidString("(*))");
+            var validString3 = ValidParenthesis.CheckValidString("((*)");
             Console.WriteLine("Hello, World!");
         }
     }
