@@ -636,6 +636,12 @@ namespace LogicLeague
             var validString = ValidParenthesis.CheckValidString("(*)");
             var validString2 = ValidParenthesis.CheckValidString("(*))");
             var validString3 = ValidParenthesis.CheckValidString("((*)");
+
+            var gasStation = GasStation.CanCompleteCircuit([1, 2, 3, 4, 5], [3, 4, 5, 1, 2]);
+            var gasStation2 = GasStation.CanCompleteCircuit([2, 3, 4], [3, 4, 3]);
+
+            var handOfStreights = HandOfStraights.IsNStraightHand([6, 2, 3, 4, 7, 8, 1, 2, 3], 3);
+            var handOfStreights2 = HandOfStraights.IsNStraightHand([1, 2, 3, 4, 5], 4);
             Console.WriteLine("Hello, World!");
         }
     }
