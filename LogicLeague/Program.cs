@@ -642,6 +642,12 @@ namespace LogicLeague
 
             var handOfStreights = HandOfStraights.IsNStraightHand([6, 2, 3, 4, 7, 8, 1, 2, 3], 3);
             var handOfStreights2 = HandOfStraights.IsNStraightHand([1, 2, 3, 4, 5], 4);
+
+            var mergeTriplets = MergeTripletsProblem.MergeTriplets([[2, 5, 3], [1, 8, 4], [1, 7, 5]], [2, 7, 5]);
+            var mergeTriplets1 = MergeTripletsProblem.MergeTriplets([[3, 4, 5], [4, 5, 6]], [3, 2, 5]);
+            var mergeTriplets2 = MergeTripletsProblem.MergeTriplets([[2, 5, 3], [2, 3, 4], [1, 2, 5], [5, 2, 3]], [5, 5, 5]);
+
+            var partitionLabels = PartitionLabelsProblem.PartitionLabels("abacdbghgm");
             Console.WriteLine("Hello, World!");
         }
     }
