@@ -90,7 +90,10 @@
 
         public ListNode next;
 
-
+        public ListNode()
+        {
+            
+        }
 
         public static ListNode CreateList(int[] elements)
         {

@@ -648,6 +648,14 @@ namespace LogicLeague
             var mergeTriplets2 = MergeTripletsProblem.MergeTriplets([[2, 5, 3], [2, 3, 4], [1, 2, 5], [5, 2, 3]], [5, 5, 5]);
 
             var partitionLabels = PartitionLabelsProblem.PartitionLabels("abacdbghgm");
+
+
+            var l1 = ListNode.CreateList([1, 2, 3, 4]);
+            var l2 = ListNode.CreateList([9, 9, 9, 9]);
+
+            var add2Numbers = Add2Numbers.AddTwoNumbers(l1, l2);
+
+            var reverseList = Add2Numbers.ReverseList(l1);
             Console.WriteLine("Hello, World!");
         }
     }
