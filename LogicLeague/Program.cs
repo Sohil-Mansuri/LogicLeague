@@ -661,6 +661,14 @@ namespace LogicLeague
             var input2 = ListNode.CreateList([2, 4, 5, 9, 15, 17]);
 
             var mergeSortedList = MergeSortedListProblem.MergeTwoLists(input1, input2);
+
+
+            var mergeKLists = MergeKSortedLists.MergeKLists([ListNode.CreateList([1, 4, 5]),
+                ListNode.CreateList([1, 3, 4]), ListNode.CreateList([2,6])]);
+
+            var mergeKLists2 = MergeKSortedLists.MergeKLists([ListNode.CreateList([1,2,2]),
+                ListNode.CreateList([1,1,2])]);
+
             Console.WriteLine("Hello, World!");
         }
     }
