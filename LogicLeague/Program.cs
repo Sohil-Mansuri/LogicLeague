@@ -656,6 +656,11 @@ namespace LogicLeague
             var add2Numbers = Add2Numbers.AddTwoNumbers(l1, l2);
 
             var reverseList = Add2Numbers.ReverseList(l1);
+
+            var input1 = ListNode.CreateList([2, 6, 7, 8]);
+            var input2 = ListNode.CreateList([2, 4, 5, 9, 15, 17]);
+
+            var mergeSortedList = MergeSortedListProblem.MergeTwoLists(input1, input2);
             Console.WriteLine("Hello, World!");
         }
     }
