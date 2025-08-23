@@ -669,6 +669,12 @@ namespace LogicLeague
             var mergeKLists2 = MergeKSortedLists.MergeKLists([ListNode.CreateList([1,2,2]),
                 ListNode.CreateList([1,1,2])]);
 
+            var removeNthNode = RemoveNthLastNode.RemoveNthFromEnd(ListNode.CreateList([1, 2, 2]), 1);
+            var removeNthNode2 = RemoveNthLastNode.RemoveNthFromEnd(ListNode.CreateList([1, 2, 3, 4, 5, 6, 7]), 2);
+            var removeNthNode3 = RemoveNthLastNode.RemoveNthFromEnd(ListNode.CreateList([1]), 1);
+            var removeNthNoder4 = RemoveNthLastNode.RemoveNthFromEnd(ListNode.CreateList([1, 2]), 1);
+            var removeNthNoder5 = RemoveNthLastNode.RemoveNthFromEnd(ListNode.CreateList([1, 2]), 2);
+
             Console.WriteLine("Hello, World!");
         }
     }
