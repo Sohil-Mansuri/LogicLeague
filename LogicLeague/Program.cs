@@ -675,6 +675,7 @@ namespace LogicLeague
             var removeNthNoder4 = RemoveNthLastNode.RemoveNthFromEnd(ListNode.CreateList([1, 2]), 1);
             var removeNthNoder5 = RemoveNthLastNode.RemoveNthFromEnd(ListNode.CreateList([1, 2]), 2);
 
+            ReorderListProblem.ReorderList(ListNode.CreateList([1, 2, 3, 4, 5]));
             Console.WriteLine("Hello, World!");
         }
     }
