@@ -1,4 +1,5 @@
 ﻿using LogicLeague.Stack;
+using LogicLeague.Tree;
 using System.ComponentModel.DataAnnotations;
 using static LogicLeague.EmployeeFreeTimeProblem;
 
@@ -676,6 +677,17 @@ namespace LogicLeague
             var removeNthNoder5 = RemoveNthLastNode.RemoveNthFromEnd(ListNode.CreateList([1, 2]), 2);
 
             ReorderListProblem.ReorderList(ListNode.CreateList([1, 2, 3, 4, 5]));
+
+            var thridLeaf = new TreeNode(3, null, null);
+            var forthLeaf = new TreeNode(4, null, null);
+            var sixthLeaf = new TreeNode(6, null, null);
+            
+            var secondNode = new TreeNode(2, thridLeaf, forthLeaf);
+            var fifthNode = new TreeNode(5, null, sixthLeaf);
+
+            var rootNode = new TreeNode(1, secondNode, fifthNode);
+
+            FlatternBineryTree.Flatten(rootNode);
             Console.WriteLine("Hello, World!");
         }
     }
