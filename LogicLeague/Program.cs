@@ -697,6 +697,9 @@ namespace LogicLeague
             var findDuplicate2 = FindDuplicateWithoutExtraSpace.FindDuplicate([2, 5, 9, 6, 9, 3, 8, 9, 7, 1]);
 
             var romanToInteger = RomanToInteger.RomanToIntV2("MCMXCIV");
+
+            var firstMissingInterger = FirstMissingPositiveProblem.FirstMissingPositive([3, 4, -1, 1]);
+            var firstMissingInterger2 = FirstMissingPositiveProblem.FirstMissingPositive([5, -1, 16, 1, 0, 3, -8, 2]);
             Console.WriteLine("Hello, World!");
         }
     }
