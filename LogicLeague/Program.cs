@@ -688,6 +688,15 @@ namespace LogicLeague
             var rootNode = new TreeNode(1, secondNode, fifthNode);
 
             FlatternBineryTree.Flatten(rootNode);
+
+            var revInput = ListNode.CreateList([1, 2, 3, 4, 5]);
+            var reverseKGroupList = ReverseNodes.ReverseKGroup(revInput, 2);
+
+            var findDuplicate = FindDuplicateWithoutExtraSpace.FindDuplicate([1, 3, 4, 2, 2]);
+            var findDuplicate1 = FindDuplicateWithoutExtraSpace.FindDuplicate([3, 1, 3, 4, 2]);
+            var findDuplicate2 = FindDuplicateWithoutExtraSpace.FindDuplicate([2, 5, 9, 6, 9, 3, 8, 9, 7, 1]);
+
+            var romanToInteger = RomanToInteger.RomanToIntV2("MCMXCIV");
             Console.WriteLine("Hello, World!");
         }
     }
