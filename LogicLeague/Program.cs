@@ -1,5 +1,6 @@
 ﻿using LogicLeague.Stack;
 using LogicLeague.Tree;
+using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 using static LogicLeague.EmployeeFreeTimeProblem;
 
@@ -700,7 +701,15 @@ namespace LogicLeague
 
             var firstMissingInterger = FirstMissingPositiveProblem.FirstMissingPositive([3, 4, -1, 1]);
             var firstMissingInterger2 = FirstMissingPositiveProblem.FirstMissingPositive([5, -1, 16, 1, 0, 3, -8, 2]);
-            Console.WriteLine("Hello, World!");
+
+            var reverseInteger = ReverseInteger.Reverse(-12);
+
+            var numArray = new NumArrayV2([-2, 0, 3, -5, 2, -1]);
+
+            var sumRange = numArray.SumRange(0, 2);
+            var sumRange1 = numArray.SumRange(2,5);
+            var sumRange2 = numArray.SumRange(0, 5);
+
         }
     }
 }
