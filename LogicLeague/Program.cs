@@ -682,7 +682,7 @@ namespace LogicLeague
             var thridLeaf = new TreeNode(3, null, null);
             var forthLeaf = new TreeNode(4, null, null);
             var sixthLeaf = new TreeNode(6, null, null);
-            
+
             var secondNode = new TreeNode(2, thridLeaf, forthLeaf);
             var fifthNode = new TreeNode(5, null, sixthLeaf);
 
@@ -707,8 +707,13 @@ namespace LogicLeague
             var numArray = new NumArrayV2([-2, 0, 3, -5, 2, -1]);
 
             var sumRange = numArray.SumRange(0, 2);
-            var sumRange1 = numArray.SumRange(2,5);
+            var sumRange1 = numArray.SumRange(2, 5);
             var sumRange2 = numArray.SumRange(0, 5);
+
+            var contiguousArray = ContiguousArrary.FindMaxLength([0, 1, 1, 1, 1, 1, 0, 0, 0]);
+            var contiguousArray1 = ContiguousArrary.FindMaxLength([0, 1]);
+            var contiguousArray2 = ContiguousArrary.FindMaxLength([0, 1, 0]);
+            var contiguousArray3 = ContiguousArrary.FindMaxLength([0, 1, 0, 1, 0, 1, 1, 1, 0, 0]);
 
         }
     }
