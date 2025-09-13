@@ -730,6 +730,11 @@ namespace LogicLeague
             //var reverseList2 = ReverseLinkedList2.ReverseBetween(node23, 2, 4);
 
             var swapList = SwapLinkedList.SwapPairs(node23);
+
+            var nextGrether = NextGreaterElementProblem.NextGreaterElement([4, 1, 2], [1, 3, 4, 2]);
+            var nextGrether2 = NextGreaterElementProblem.NextGreaterElement([2, 4], [1, 2, 3, 4]);
+
+            Console.WriteLine("Hello world");
         }
     }
 }
