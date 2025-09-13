@@ -2,6 +2,7 @@
 using LogicLeague.Tree;
 using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 using static LogicLeague.EmployeeFreeTimeProblem;
 
 namespace LogicLeague
@@ -715,6 +716,20 @@ namespace LogicLeague
             var contiguousArray2 = ContiguousArrary.FindMaxLength([0, 1, 0]);
             var contiguousArray3 = ContiguousArrary.FindMaxLength([0, 1, 0, 1, 0, 1, 1, 1, 0, 0]);
 
+
+            var subArraySum = SubArraySum.SubarraySum([1, 1, 2, 1, 1, 3, 4], 4);
+            var subArraySum1 = SubArraySum.SubarraySum([1, 1, 1], 2);
+            var subArraySum2 = SubArraySum.SubarraySum([1, 2, 3], 3);
+            var subArraySum3 = SubArraySum.SubarraySum([1, -1, 1], 1);
+
+
+            var maxAverage = MaximumAverageSubArray.FindMaxAverage([1, 12, -5, -6, 50, 3], 4);
+            var maxAverage2 = MaximumAverageSubArray.FindMaxAverage([5], 1);
+
+            var node23 = ListNode.CreateList([1, 2, 3, 4, 5]);
+            //var reverseList2 = ReverseLinkedList2.ReverseBetween(node23, 2, 4);
+
+            var swapList = SwapLinkedList.SwapPairs(node23);
         }
     }
 }
