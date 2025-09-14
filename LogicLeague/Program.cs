@@ -734,6 +734,10 @@ namespace LogicLeague
             var nextGrether = NextGreaterElementProblem.NextGreaterElement([4, 1, 2], [1, 3, 4, 2]);
             var nextGrether2 = NextGreaterElementProblem.NextGreaterElement([2, 4], [1, 2, 3, 4]);
 
+
+            var kSmallerElements = KPairWithSmallestSum.KSmallestPairs([1, 7, 11], [2, 4, 6], 5);
+            var kSmallerElements2 = KPairWithSmallestSum.KSmallestPairs([1, 1, 2], [1, 2, 3], 2);
+
             Console.WriteLine("Hello world");
         }
     }
