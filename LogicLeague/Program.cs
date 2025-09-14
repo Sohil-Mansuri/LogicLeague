@@ -738,6 +738,20 @@ namespace LogicLeague
             var kSmallerElements = KPairWithSmallestSum.KSmallestPairs([1, 7, 11], [2, 4, 6], 5);
             var kSmallerElements2 = KPairWithSmallestSum.KSmallestPairs([1, 1, 2], [1, 2, 3], 2);
 
+            var serchIn2dMatrix = SearchIn2DMatrix2.SearchMatrix([[1, 4, 7, 11, 15],
+                                                                 [2, 5, 8, 12, 19],
+                                                                 [3, 6, 9, 16, 22],
+                                                                 [10, 13, 14, 17, 24],
+                                                                 [18, 21, 23, 26, 30]], 99);
+
+            var serchIn2dMatrix2 = SearchIn2DMatrix2.SearchMatrix([
+                                                                  [1, 4, 7, 11],
+                                                                  [2, 5, 8, 12],
+                                                                  [3, 6, 9, 16]
+                                                                ], 9);
+
+            var searchIN2dMaterix = SearchIn2DMatrix2.SearchMatrix([[-5]], -5);
+
             Console.WriteLine("Hello world");
         }
     }
