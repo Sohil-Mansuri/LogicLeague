@@ -752,6 +752,24 @@ namespace LogicLeague
 
             var searchIN2dMaterix = SearchIn2DMatrix2.SearchMatrix([[-5]], -5);
 
+            var surroundedRegions = SurroundedRegions.SolveV2([["X", "X", "X", "X"],
+                                                             ["X", "O", "O", "X"],
+                                                             ["X", "X", "O", "X"],
+                                                             ["X", "O", "X", "X"]]);
+
+            var surroundedRegions1 = SurroundedRegions.SolveV2([["O", "O"], ["O", "O"]]);
+
+            var surroundedRegions3 = SurroundedRegions.SolveV2([["X","O", "X", "X"],
+                                                             ["X", "O", "X", "X"],
+                                                             ["X", "X", "X", "X"],
+                                                             ["X", "O", "X", "X"]]);
+
+            var surroundedRegions4 = SurroundedRegions.SolveV2([["X","X", "X", "X"],
+                                                             ["X", "O", "X", "X"],
+                                                             ["X", "O", "X", "X"],
+                                                             ["X", "O", "X", "X"]]);
+
+
             Console.WriteLine("Hello world");
         }
     }
