@@ -773,6 +773,7 @@ namespace LogicLeague
             var floodFill1 = FloodFillProblem.FloodFill([[1, 1, 1], [1, 1, 0], [1, 0, 1]], 1, 1, 2);
 
 
+            var lcs = LongestCommonSubSequence.LongestCommonSubsequence("abcdef", "abe");
 
             Console.WriteLine("Hello world");
         }
