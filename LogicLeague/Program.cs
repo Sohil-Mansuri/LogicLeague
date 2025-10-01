@@ -1,4 +1,5 @@
-﻿using LogicLeague.Stack;
+﻿using LogicLeague.Graph;
+using LogicLeague.Stack;
 using LogicLeague.Tree;
 using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
@@ -306,6 +307,7 @@ namespace LogicLeague
             var insertIntervals = InsertInterval.Insert([[1, 2], [3, 5], [6, 7], [8, 10], [12, 16]], [4, 8]);
             var insertIntervals2 = InsertInterval.Insert([[1, 2], [3, 6], [7, 9], [10, 11], [12, 16]], [4, 5]);
             var insertIntervals4 = InsertInterval.Insert([], [4, 5]);
+            var insertIntervals5 = InsertInterval.Insert([[1, 3],[6,9]], [4, 5]);
 
             var nonOverlapping = NonOverlappingIntervals.EraseOverlapIntervals([[1, 2], [1, 2], [1, 2]]);
             var nonOverlapping2 = NonOverlappingIntervals.EraseOverlapIntervals([[1, 2], [2, 3], [3, 4], [1, 3]]);
@@ -774,6 +776,24 @@ namespace LogicLeague
 
 
             var lcs = LongestCommonSubSequence.LongestCommonSubsequence("abcdef", "abe");
+
+            var burstBallon = BurstBalloons.MaxCoins([3, 1, 5]);
+
+
+            var maxArea = MaxAreaOfIslandProblem.MaxAreaOfIsland
+                                                ([[0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0], 
+                                                  [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0], 
+                                                  [0, 1, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0], 
+                                                  [0, 1, 0, 0, 1, 1, 0, 0, 1, 0, 1, 0, 0], 
+                                                  [0, 1, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0], 
+                                                  [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0], 
+                                                  [0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 0, 0, 0], 
+                                                  [0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0]]);
+
+            var maxArea1 = MaxAreaOfIslandProblem.MaxAreaOfIsland([[1, 1, 0, 0, 0],
+                                                                    [1, 1, 0, 0, 0],
+                                                                    [0, 0, 0, 1, 1],
+                                                                    [0, 0, 0, 1, 1]]);
 
             Console.WriteLine("Hello world");
         }

@@ -47,7 +47,7 @@
                 }
 
                 for (int j = 0; j < matrix[0].Length; j++)
-                {
+                { 
                     if (matrix[i][j] == 0)
                     {
                         matrix[i][0] = 0;
