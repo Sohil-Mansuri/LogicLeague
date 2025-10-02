@@ -808,6 +808,12 @@ namespace LogicLeague
             var graph = Graph.Node.CrateGraph([[2, 4], [1, 3], [2, 4], [1, 3]]);
 
             var cloneGraph = CloneGraphProblem.CloneGraph(graph);
+
+            var redundantConnection = RedundantConnection.FindRedundantConnection([[1, 2], [2, 3], [3, 4], [1, 4], [1, 5]]);
+            var redundantConnection2 = RedundantConnection.FindRedundantConnection([[1, 2], [1, 3], [2, 3]]);
+
+
+            var redundantConnection3 = RedundantConnection.FindRedundantConnection([[9, 10], [5, 8], [2, 6], [1, 5], [3, 8], [4, 9], [8, 10], [4, 10], [6, 8], [7, 9]]);
             Console.WriteLine("Hello world");
         }
     }
