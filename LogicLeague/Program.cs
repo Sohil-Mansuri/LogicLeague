@@ -804,6 +804,10 @@ namespace LogicLeague
                                                                 [1, 1, 1],
                                                                 [1, 1, 2],
                                                                 [1, 1, 1]]);
+
+            var graph = Graph.Node.CrateGraph([[2, 4], [1, 3], [2, 4], [1, 3]]);
+
+            var cloneGraph = CloneGraphProblem.CloneGraph(graph);
             Console.WriteLine("Hello world");
         }
     }

@@ -1,6 +1,4 @@
-﻿using System.Xml.Linq;
-
-namespace LogicLeague
+﻿namespace LogicLeague
 {
     /// <summary>
     /// 
