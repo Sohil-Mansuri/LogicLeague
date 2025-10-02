@@ -798,6 +798,12 @@ namespace LogicLeague
             var maxDistance = NetworkDelayTimeProblem.NetworkDelayTime([[2, 1, 1], [2, 3, 1], [3, 4, 1]], 4, 2);
             var maxDistance2 = NetworkDelayTimeProblem.NetworkDelayTime([[1, 2, 1]], 2, 2);
 
+            var rottenOranges = RottingOranges.OrangesRotting([[2, 1, 1], [1, 1, 0], [0, 1, 1]]);
+            var rottenOranges2 = RottingOranges.OrangesRotting([[1, 1, 1],
+                                                                [1, 2, 1],
+                                                                [1, 1, 1],
+                                                                [1, 1, 2],
+                                                                [1, 1, 1]]);
             Console.WriteLine("Hello world");
         }
     }
