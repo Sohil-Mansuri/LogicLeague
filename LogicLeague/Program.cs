@@ -814,6 +814,12 @@ namespace LogicLeague
 
 
             var redundantConnection3 = RedundantConnection.FindRedundantConnection([[9, 10], [5, 8], [2, 6], [1, 5], [3, 8], [4, 9], [8, 10], [4, 10], [6, 8], [7, 9]]);
+
+            var courseSchedule = CourseSchedule.CanFinish(6, [[0, 2], [1, 2], [1, 4], [1, 5], [2, 3], [3, 4], [4, 5]]);
+            var courseSchedule12 = CourseSchedule.CanFinish(2, [[1, 0], [0, 1]]);
+
+            var courseSchedule2 = CourseSchedule2.FindOrder(6, [[0, 2], [1, 2], [1, 4], [1, 5], [2, 3], [3, 4], [4, 5]]);
+
             Console.WriteLine("Hello world");
         }
     }
