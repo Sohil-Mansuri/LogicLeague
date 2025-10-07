@@ -1,5 +1,4 @@
-﻿
-namespace LogicLeague.Graph
+﻿namespace LogicLeague.Graph
 {
     /// <summary>
     /// https://leetcode.com/problems/course-schedule-ii/

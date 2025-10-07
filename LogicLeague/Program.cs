@@ -820,6 +820,18 @@ namespace LogicLeague
 
             var courseSchedule2 = CourseSchedule2.FindOrder(6, [[0, 2], [1, 2], [1, 4], [1, 5], [2, 3], [3, 4], [4, 5]]);
 
+            var wallAndGates = WallsAndGates.ComputeGateDistances([
+                                                          [2147483647, -1, 0, 2147483647],
+                                                          [2147483647, 2147483647, 2147483647, -1],
+                                                          [2147483647, -1, 2147483647, -1],
+                                                          [0, -1, 2147483647, 2147483647]
+                                                        ]);
+
+            var pacificAtlantic = PecificAtlantic.PacificAtlantic([[1, 2, 2, 3, 5], 
+                                                                   [3, 2, 3, 4, 4], 
+                                                                   [2, 4, 5, 3, 1], 
+                                                                   [6, 7, 1, 4, 5], 
+                                                                   [5, 1, 1, 2, 4]]);
             Console.WriteLine("Hello world");
         }
     }
