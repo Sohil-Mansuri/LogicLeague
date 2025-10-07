@@ -18,15 +18,15 @@ namespace LogicLeague.Graph
 
             for (int j = 0; j < cols; j++)
             {
-                DFS(heights, pecific, 0, j, 0);
-                DFS(heights, atlantic, rows - 1, j, 0);
+                DFS(pecific, 0, j, 0);
+                DFS(atlantic, rows - 1, j, 0);
             }
 
 
             for (int i = 0; i < rows; i++)
             {
-                DFS(heights, pecific, i, 0, 0);
-                DFS(heights, atlantic, i, cols - 1, 0);
+                DFS(pecific, i, 0, 0);
+                DFS(atlantic, i, cols - 1, 0);
             }
 
             for (int i = 0; i < rows; i++)
@@ -38,7 +38,7 @@ namespace LogicLeague.Graph
                 }
             }
 
-            void DFS(int[][] heights, bool[,] visited, int row, int column, int previousHeight)
+            void DFS(bool[,] visited, int row, int column, int previousHeight)
             {
                 if (row < 0 || column < 0 || row >= rows || column >= cols) return;
 
@@ -47,10 +47,10 @@ namespace LogicLeague.Graph
                 visited[row, column] = true;
 
 
-                DFS(heights, visited, row + 1, column, heights[row][column]);
-                DFS(heights, visited, row - 1, column, heights[row][column]);
-                DFS(heights, visited, row, column + 1, heights[row][column]);
-                DFS(heights, visited, row, column - 1, heights[row][column]);
+                DFS(visited, row + 1, column, heights[row][column]);
+                DFS(visited, row - 1, column, heights[row][column]);
+                DFS(visited, row, column + 1, heights[row][column]);
+                DFS(visited, row, column - 1, heights[row][column]);
             }
 
             return result;

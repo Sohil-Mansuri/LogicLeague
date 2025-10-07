@@ -1,5 +1,4 @@
-﻿
-namespace LogicLeague
+﻿namespace LogicLeague.Graph
 {
     internal class NumberOfIsland
     {
@@ -40,6 +39,42 @@ namespace LogicLeague
                 if (grid[newRow][newColumn] == '1')
                     Backtrack(grid, newRow, newColumn);
             }
+        }
+
+
+        public static int NumIslandsV2(char[][] grid)
+        {
+            int rows = grid.Length;
+            int cols = grid[0].Length;
+
+            int noOfIsland = 0;
+
+            for (int i = 0; i < rows; i++)
+            {
+                for (int j = 0; j < cols; j++)
+                {
+                    if (grid[i][j] == '1')
+                    {
+                        noOfIsland++;
+                        DFS(i, j);
+                    }
+                }
+            }
+
+            void DFS(int row, int column)
+            {
+                if (row < 0 || column < 0 || row >= rows || column >= cols || grid[row][column] == '0')
+                    return;
+
+                grid[row][column] = '0';
+
+                DFS(row + 1, column);
+                DFS(row - 1, column);
+                DFS(row, column + 1);
+                DFS(row, column - 1);
+            }
+
+            return noOfIsland;
         }
     }
 }

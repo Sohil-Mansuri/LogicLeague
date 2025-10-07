@@ -832,6 +832,9 @@ namespace LogicLeague
                                                                    [2, 4, 5, 3, 1], 
                                                                    [6, 7, 1, 4, 5], 
                                                                    [5, 1, 1, 2, 4]]);
+
+            var alienOrder21 = AlienOrderProblem.AlienOrderV2(["wrt", "wrf", "er", "ett", "rftt"]);
+            var alienOrder22 = AlienOrderProblem.AlienOrder(["a", "b", "c", "b"]);
             Console.WriteLine("Hello world");
         }
     }
