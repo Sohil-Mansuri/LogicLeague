@@ -835,6 +835,9 @@ namespace LogicLeague
 
             var alienOrder21 = AlienOrderProblem.AlienOrderV2(["wrt", "wrf", "er", "ett", "rftt"]);
             var alienOrder22 = AlienOrderProblem.AlienOrder(["a", "b", "c", "b"]);
+
+            var noOfProvince = NumberOfProvinces.FindCircleNum([[1, 1, 0], [1, 1, 0], [0, 0, 1]]);
+            var noOfProvince2 = NumberOfProvinces.FindCircleNum([[1, 0, 0], [0, 1, 0], [0, 0, 1]]);
             Console.WriteLine("Hello world");
         }
     }
