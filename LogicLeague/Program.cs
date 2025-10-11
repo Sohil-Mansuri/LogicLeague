@@ -805,6 +805,17 @@ namespace LogicLeague
                                                                 [1, 1, 2],
                                                                 [1, 1, 1]]);
 
+            var rottenOrganges3 = RottingOranges.OrangesRotting([[2, 1, 1], [0, 1, 1], [1, 0, 1]]);
+
+            var rottenOranges21 = RottingOranges.OrangesRottingV2([[2, 1, 1], [1, 1, 0], [0, 1, 1]]);
+            var rottenOranges22 = RottingOranges.OrangesRottingV2([[1, 1, 1],
+                                                                [1, 2, 1],
+                                                                [1, 1, 1],
+                                                                [1, 1, 2],
+                                                                [1, 1, 1]]);
+
+            var rottenOrganges23 = RottingOranges.OrangesRottingV2([[2, 1, 1], [0, 1, 1], [1, 0, 1]]);
+
             var graph = Graph.Node.CrateGraph([[2, 4], [1, 3], [2, 4], [1, 3]]);
 
             var cloneGraph = CloneGraphProblem.CloneGraph(graph);
@@ -838,6 +849,14 @@ namespace LogicLeague
 
             var noOfProvince = NumberOfProvinces.FindCircleNum([[1, 1, 0], [1, 1, 0], [0, 0, 1]]);
             var noOfProvince2 = NumberOfProvinces.FindCircleNum([[1, 0, 0], [0, 1, 0], [0, 0, 1]]);
+
+            var detectCycle1= DetectCycle.IsCycle([[1, 2], [2, 3], [1, 4], [4, 5], [5, 3]]);
+            var detectCycle12 = DetectCycle.IsCycle([[0, 1], [2, 3]]);
+
+            var detectCycle2 = DetectCycle.IsCycleV2([[1, 2], [2, 3], [1, 4], [4, 5], [5, 3]]);
+            var detectCycle22 = DetectCycle.IsCycleV2([[0, 1], [2, 3]]);
+
+            var zeroOneMatrix = ZeroOneMatrixProblem.UpdateMatrix([[0, 0, 0], [0, 1, 1], [1, 1, 1]]);
             Console.WriteLine("Hello world");
         }
     }
