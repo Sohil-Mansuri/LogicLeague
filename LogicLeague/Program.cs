@@ -838,10 +838,10 @@ namespace LogicLeague
                                                           [0, -1, 2147483647, 2147483647]
                                                         ]);
 
-            var pacificAtlantic = PecificAtlantic.PacificAtlantic([[1, 2, 2, 3, 5], 
-                                                                   [3, 2, 3, 4, 4], 
-                                                                   [2, 4, 5, 3, 1], 
-                                                                   [6, 7, 1, 4, 5], 
+            var pacificAtlantic = PecificAtlantic.PacificAtlantic([[1, 2, 2, 3, 5],
+                                                                   [3, 2, 3, 4, 4],
+                                                                   [2, 4, 5, 3, 1],
+                                                                   [6, 7, 1, 4, 5],
                                                                    [5, 1, 1, 2, 4]]);
 
             var alienOrder21 = AlienOrderProblem.AlienOrderV2(["wrt", "wrf", "er", "ett", "rftt"]);
@@ -850,7 +850,7 @@ namespace LogicLeague
             var noOfProvince = NumberOfProvinces.FindCircleNum([[1, 1, 0], [1, 1, 0], [0, 0, 1]]);
             var noOfProvince2 = NumberOfProvinces.FindCircleNum([[1, 0, 0], [0, 1, 0], [0, 0, 1]]);
 
-            var detectCycle1= DetectCycle.IsCycle([[1, 2], [2, 3], [1, 4], [4, 5], [5, 3]]);
+            var detectCycle1 = DetectCycle.IsCycle([[1, 2], [2, 3], [1, 4], [4, 5], [5, 3]]);
             var detectCycle12 = DetectCycle.IsCycle([[0, 1], [2, 3]]);
 
             var detectCycle2 = DetectCycle.IsCycleV2([[1, 2], [2, 3], [1, 4], [4, 5], [5, 3]]);
@@ -860,6 +860,11 @@ namespace LogicLeague
 
             var totalEnvales = NumberOfEnclaves.NumEnclaves([[0, 0, 0, 0], [1, 0, 1, 0], [0, 1, 1, 0], [0, 0, 0, 0]]);
             var totalEnvales1 = NumberOfEnclaves.NumEnclaves([[0, 1, 1, 0], [0, 0, 1, 0], [0, 0, 1, 0], [0, 0, 0, 0]]);
+
+            var distinctIsland = NumberOfDistinctIsland.FindDistinctIsland([[1,1,0,1,1],
+                                                                            [1,0,0,0,0],
+                                                                            [0,0,0,1,1],
+                                                                            [1,1,0,1,0]]);
             Console.WriteLine("Hello world");
         }
     }
