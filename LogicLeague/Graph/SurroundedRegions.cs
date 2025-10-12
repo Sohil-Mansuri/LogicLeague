@@ -1,7 +1,4 @@
-﻿
-
-
-namespace LogicLeague
+﻿namespace LogicLeague.Graph
 {
     /// <summary>
     /// https://leetcode.com/problems/surrounded-regions/

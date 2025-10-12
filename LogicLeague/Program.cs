@@ -857,6 +857,9 @@ namespace LogicLeague
             var detectCycle22 = DetectCycle.IsCycleV2([[0, 1], [2, 3]]);
 
             var zeroOneMatrix = ZeroOneMatrixProblem.UpdateMatrix([[0, 0, 0], [0, 1, 1], [1, 1, 1]]);
+
+            var totalEnvales = NumberOfEnclaves.NumEnclaves([[0, 0, 0, 0], [1, 0, 1, 0], [0, 1, 1, 0], [0, 0, 0, 0]]);
+            var totalEnvales1 = NumberOfEnclaves.NumEnclaves([[0, 1, 1, 0], [0, 0, 1, 0], [0, 0, 1, 0], [0, 0, 0, 0]]);
             Console.WriteLine("Hello world");
         }
     }
