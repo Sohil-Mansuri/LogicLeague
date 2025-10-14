@@ -27,10 +27,14 @@ namespace LogicLeague.Graph
             return uniqueIslands.Count;
         }
 
-        private static void DFS(int[][] grid, int row, int column, StringBuilder shape, (int row, int column) parent)
+        private static void DFS(int[][] grid, 
+            int row, 
+            int column, 
+            StringBuilder shape, 
+            (int row, int column) origin)
         {
             grid[row][column] = 0;
-            shape.Append($"{row - parent.row}{column - parent.column}#");
+            shape.Append($"{row - origin.row}{column - origin.column}#");
 
             for (int k = 0; k < rowDirection.Length; k++)
             {
@@ -39,7 +43,7 @@ namespace LogicLeague.Graph
 
                 if (newRow >= 0 && newColumn >= 0 && newRow < grid.Length && newColumn < grid[0].Length && grid[newRow][newColumn] == 1)
                 {
-                    DFS(grid, newRow, newColumn, shape, parent);
+                    DFS(grid, newRow, newColumn, shape, origin);
                 }
             }
         }
