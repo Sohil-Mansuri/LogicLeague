@@ -1,4 +1,5 @@
 ﻿
+
 namespace LogicLeague.Graph
 {
     internal class DetectCycle
@@ -98,6 +99,54 @@ namespace LogicLeague.Graph
                     return true;
             }
 
+            return false;
+        }
+
+
+        public bool IsCycleV3(int[][] edges)
+        {
+            Dictionary<int, HashSet<int>> graph = [];
+
+            foreach (var edge in edges)
+            {
+                if (!graph.ContainsKey(edge[0]))
+                    graph[edge[0]] = [];
+
+                graph[edge[0]].Add(edge[1]);
+            }
+
+            HashSet<int> visited = [];
+            HashSet<int> visiting = [];
+
+            foreach (var node in graph.Keys)
+            {
+                if (!visited.Contains(node) && DFSV2(graph, visited, node, visiting))
+                    return true;
+            }
+
+            return false;
+        }
+
+        private bool DFSV2(Dictionary<int, HashSet<int>> graph, HashSet<int> visited, int node, HashSet<int> visiting)
+        {
+            visiting.Add(node);
+
+            foreach (var neighbour in graph[node])
+            {
+                if (visiting.Contains(neighbour))
+                    return true;
+
+                if (!visited.Contains(neighbour))
+                {
+                    if (DFSV2(graph, visited, neighbour, visiting))
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            visiting.Remove(node);
+            visited.Add(node);
             return false;
         }
     }
