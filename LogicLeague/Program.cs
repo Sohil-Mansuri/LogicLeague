@@ -829,6 +829,11 @@ namespace LogicLeague
             var courseSchedule = CourseSchedule.CanFinish(6, [[0, 2], [1, 2], [1, 4], [1, 5], [2, 3], [3, 4], [4, 5]]);
             var courseSchedule12 = CourseSchedule.CanFinish(2, [[1, 0], [0, 1]]);
 
+            var courseSchedule21 = CourseSchedule.CanFinishV2(6, [[0, 2], [1, 2], [1, 4], [1, 5], [2, 3], [3, 4], [4, 5]]);
+            var courseSchedule22 = CourseSchedule.CanFinishV2(2, [[1, 0], [0, 1]]);
+            var courseSchedule23 = CourseSchedule.CanFinishV2(2, [[1, 0]]);
+
+
             var courseSchedule2 = CourseSchedule2.FindOrder(6, [[0, 2], [1, 2], [1, 4], [1, 5], [2, 3], [3, 4], [4, 5]]);
 
             var wallAndGates = WallsAndGates.ComputeGateDistances([
@@ -865,6 +870,19 @@ namespace LogicLeague
                                                                             [1,0,0,0,0],
                                                                             [0,0,0,1,1],
                                                                             [1,1,0,1,0]]);
+
+            var evantualSafeNodes = EventualSafeState.EventualSafeNodes([[1, 2], [2, 3], [5], [0], [5], [], []]);
+            var evantualSafeNodes1 = EventualSafeState.EventualSafeNodesV2([[1, 2], [2, 3], [5], [0], [5], [], []]);
+
+            var topologicalSort = TopologicalSortProblem.TopologicalSort([
+                                                                            [5, 2],
+                                                                            [5, 0],
+                                                                            [4, 0],
+                                                                            [4, 1],
+                                                                            [2, 3],
+                                                                            [3, 1]]);
+
+
             Console.WriteLine("Hello world");
         }
     }

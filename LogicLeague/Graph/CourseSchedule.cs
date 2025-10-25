@@ -64,5 +64,47 @@ namespace LogicLeague.Graph
             order.Push(course);
             return true;
         }
+
+
+        public static bool CanFinishV2(int numCourses, int[][] prerequisites)
+        {
+            Dictionary<int, HashSet<int>> graph = [];
+            Dictionary<int, int> indegree = [];
+
+            foreach (var course in prerequisites)
+            {
+                if (!graph.ContainsKey(course[0]))
+                    graph[course[0]] = [];
+
+                if (!graph.ContainsKey(course[1]))
+                    graph[course[1]] = [];
+
+                graph[course[0]].Add(course[1]);
+                indegree[course[1]] = indegree.GetValueOrDefault(course[1], 0) + 1;
+                indegree[course[0]] = indegree.GetValueOrDefault(course[0], 0);
+            }
+
+            Queue<int> queue = new(indegree.Where(w => w.Value == 0).Select(s => s.Key));
+
+            IList<int> result = [];
+
+            while (queue.Count > 0)
+            {
+                var current = queue.Dequeue();
+                result.Add(current);
+
+                foreach (var neighbour in graph[current])
+                {
+                    indegree[neighbour]--;
+                    if (indegree[neighbour] == 0)
+                        queue.Enqueue(neighbour);
+                }
+            }
+
+            if (graph.Count != result.Count)
+                return false;
+
+            return true;
+        }
     }
 }
