@@ -1,4 +1,5 @@
-﻿using LogicLeague.Graph;
+﻿using LogicLeague.Arrays;
+using LogicLeague.Graph;
 using LogicLeague.Stack;
 using LogicLeague.Tree;
 using Newtonsoft.Json;
