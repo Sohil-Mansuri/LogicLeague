@@ -3,6 +3,9 @@
 
 namespace LogicLeague.Tree
 {
+    /// <summary>
+    /// https://leetcode.com/problems/balanced-binary-tree/
+    /// </summary>
     internal class BalanceBineryTree
     {
         public static bool IsBalanced(TreeNode root)

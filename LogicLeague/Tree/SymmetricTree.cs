@@ -1,5 +1,8 @@
 ﻿namespace LogicLeague.Tree
 {
+    /// <summary>
+    /// https://leetcode.com/problems/symmetric-tree
+    /// </summary>
     internal class SymmetricTree
     {
         public bool IsSymmetric(TreeNode root)

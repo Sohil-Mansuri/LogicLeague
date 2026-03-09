@@ -9,24 +9,22 @@
 
         public static int DiameterOfBinaryTree(TreeNode root)
         {
-            if (root == null) return _diameter;
-
+            if (root is null) return _diameter;
             FindLength(root);
 
             return _diameter;
-
         }
 
         private static int FindLength(TreeNode node)
         {
-            if (node == null) return 0;
+            if (node is null) return 0;
 
             int leftHeight = FindLength(node.left);
             int rightHeight = FindLength(node.right);
 
             _diameter = Math.Max(_diameter, leftHeight + rightHeight);
 
-            return 1 + Math.Max(leftHeight, rightHeight);
+            return Math.Max(leftHeight, rightHeight) + 1;
         }
     }
 }
