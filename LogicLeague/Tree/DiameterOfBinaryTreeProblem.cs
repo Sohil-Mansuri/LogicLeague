@@ -5,14 +5,14 @@
     /// </summary>
     internal class DiameterOfBinaryTreeProblem
     {
-        private static int _diameter = 0;
+        private static int diameter = 0;
 
         public static int DiameterOfBinaryTree(TreeNode root)
         {
-            if (root is null) return _diameter;
+            if (root is null) return diameter;
             FindLength(root);
 
-            return _diameter;
+            return diameter;
         }
 
         private static int FindLength(TreeNode node)
@@ -22,7 +22,7 @@
             int leftHeight = FindLength(node.left);
             int rightHeight = FindLength(node.right);
 
-            _diameter = Math.Max(_diameter, leftHeight + rightHeight);
+            diameter = Math.Max(diameter, leftHeight + rightHeight);
 
             return Math.Max(leftHeight, rightHeight) + 1;
         }
