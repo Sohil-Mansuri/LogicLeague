@@ -1,4 +1,4 @@
-﻿namespace LogicLeague
+﻿namespace LogicLeague.Arrays
 {
     /// <summary>
     /// https://leetcode.com/problems/maximum-subarray/
