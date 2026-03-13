@@ -38,7 +38,7 @@ namespace LogicLeague.Tree
             return result;
         }
 
-        public IList<IList<int>> LevelOrder(TreeNode root)
+        public IList<IList<int>> LevelOrderV2(TreeNode root)
         {
             if (root is null) return [];
 

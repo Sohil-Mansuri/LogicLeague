@@ -883,6 +883,22 @@ namespace LogicLeague
                                                                             [2, 3],
                                                                             [3, 1]]);
 
+            var trieExample = new Trie();
+            trieExample.Insert("apple");
+            trieExample.Insert("google");
+            trieExample.Insert("Amazon");
+            trieExample.Insert("Amazing");
+
+            var isExistInTrie = trieExample.Search("apple");
+            var isExistInTrie1 = trieExample.Search("Amazing");
+            var isExistInTrie2 = trieExample.Search("good");
+            var isExistInTrie3 = trieExample.Search("googler");
+            var isExistInTrie4 = trieExample.Search("app");
+
+            var isStartWithInTrie = trieExample.StartsWith("app");
+            var isStartWithInTrie1 = trieExample.StartsWith("good");
+            var isStartWithInTrie2 = trieExample.StartsWith("abd");
+            var isStartWithInTrie3 = trieExample.StartsWith("apple");
 
             Console.WriteLine("Hello world");
         }
