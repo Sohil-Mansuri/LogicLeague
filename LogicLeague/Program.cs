@@ -900,6 +900,15 @@ namespace LogicLeague
             var isStartWithInTrie2 = trieExample.StartsWith("abd");
             var isStartWithInTrie3 = trieExample.StartsWith("apple");
 
+            var firstNode = new TreeNode(1, null, null);
+            var secondNode1 = new TreeNode(2, null, null);
+
+            var rootNode23 = new TreeNode(3, firstNode, secondNode1);
+            var serelize = new BinaryTreeSerialization();
+
+            var data21212 = serelize.serialize(rootNode23);
+            var original = serelize.deserialize(data21212);
+
             Console.WriteLine("Hello world");
         }
     }
