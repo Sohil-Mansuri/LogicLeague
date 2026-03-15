@@ -909,6 +909,19 @@ namespace LogicLeague
             var data21212 = serelize.serialize(rootNode23);
             var original = serelize.deserialize(data21212);
 
+            char[][] board = new char[][]
+            {
+                    ['o', 'a', 'a', 'n'],
+                    ['e', 't', 'a', 'e'],
+                    ['i', 'h', 'k', 'r'],
+                    ['i', 'f', 'l', 'v']
+            };
+
+            var wordSeach21 = WordSearch2BruteForce.FindWords(board, ["oath", "pea", "eat", "rain"]);
+
+            var wordSeach212 = WordSearch2.FindWords(board, ["oath", "pea", "eat", "rain"]);
+            var wordSeach2123 = WordSearch2.FindWords([['a', 'a']], ["aaa"]);
+
             Console.WriteLine("Hello world");
         }
     }

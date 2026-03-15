@@ -1,4 +1,6 @@
-﻿namespace LogicLeague.Tree
+﻿using System.Text;
+
+namespace LogicLeague.Tree
 {
     public class TrieNode
     {
@@ -9,6 +11,8 @@
             Children = [];
             IsEndOfWord = false;
         }
+
+        public string Word { get; set; }
     }
 
     public class Trie
