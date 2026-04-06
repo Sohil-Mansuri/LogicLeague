@@ -6,6 +6,7 @@ namespace LogicLeague.Graph
     /// </summary>
     internal class CourseSchedule
     {
+        //Depth-First Search Cycle Detection.
         public static bool CanFinish(int numCourses, int[][] prerequisites)
         {
             Dictionary<int, List<int>> graph = [];
@@ -66,6 +67,7 @@ namespace LogicLeague.Graph
         }
 
 
+        //Kahn’s Algorithm Topological sort using Kahn's algorithm
         public static bool CanFinishV2(int numCourses, int[][] prerequisites)
         {
             Dictionary<int, HashSet<int>> graph = [];

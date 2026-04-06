@@ -1,10 +1,8 @@
 ﻿using LogicLeague.Arrays;
+using LogicLeague.CodingPatterns._1.TwoPointers;
 using LogicLeague.Graph;
 using LogicLeague.Stack;
 using LogicLeague.Tree;
-using Newtonsoft.Json;
-using System.ComponentModel.DataAnnotations;
-using System.Text.Json.Serialization;
 using static LogicLeague.EmployeeFreeTimeProblem;
 
 namespace LogicLeague
@@ -921,6 +919,9 @@ namespace LogicLeague
 
             var wordSeach212 = WordSearch2.FindWords(board, ["oath", "pea", "eat", "rain"]);
             var wordSeach2123 = WordSearch2.FindWords([['a', 'a']], ["aaa"]);
+
+
+            var moveZeros = MoveZeros.MoveZeroesV2([1, 0, 1]);
 
             Console.WriteLine("Hello world");
         }
