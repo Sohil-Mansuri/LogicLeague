@@ -1,5 +1,6 @@
 ﻿using LogicLeague.Arrays;
 using LogicLeague.CodingPatterns._1.TwoPointers;
+using LogicLeague.CodingPatterns._2.SlidingWindow;
 using LogicLeague.Graph;
 using LogicLeague.Stack;
 using LogicLeague.Tree;
@@ -842,6 +843,14 @@ namespace LogicLeague
                                                           [0, -1, 2147483647, 2147483647]
                                                         ]);
 
+            var wallAndGatesV2 = WallsAndGates.ComputeGateDistances([
+                                              [2147483647, -1, 0, 2147483647],
+                                                          [2147483647, 2147483647, 2147483647, -1],
+                                                          [2147483647, -1, 2147483647, -1],
+                                                          [0, -1, 2147483647, 2147483647]
+                                            ]);
+
+
             var pacificAtlantic = PecificAtlantic.PacificAtlantic([[1, 2, 2, 3, 5],
                                                                    [3, 2, 3, 4, 4],
                                                                    [2, 4, 5, 3, 1],
@@ -922,6 +931,12 @@ namespace LogicLeague
 
 
             var moveZeros = MoveZeros.MoveZeroesV2([1, 0, 1]);
+
+            var maxAvSubArray1 = MaximumAverageSubarray.FindMaxAverage([1, 12, -5, -6, 50, 3], 4);
+
+            var findCelb = FindCelebratiy.FindCelebrity(6);
+
+            var reconstructItinerary = ReconstructItinerary.FindItinerary([["JFK", "SFO"], ["JFK", "ATL"], ["SFO", "ATL"], ["ATL", "JFK"], ["ATL", "SFO"]]);
 
             Console.WriteLine("Hello world");
         }

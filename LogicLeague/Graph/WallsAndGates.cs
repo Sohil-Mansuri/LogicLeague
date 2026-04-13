@@ -1,10 +1,12 @@
-﻿namespace LogicLeague.Graph
+﻿
+namespace LogicLeague.Graph
 {
     /// <summary>
     /// https://leetcode.com/problems/walls-and-gates
     /// </summary>
     internal class WallsAndGates
     {
+        //Multi-Source BFS, Multi source shortest path
         public static int[][] ComputeGateDistances(int[][] rooms)
         {
             int noOfRows = rooms.Length;
