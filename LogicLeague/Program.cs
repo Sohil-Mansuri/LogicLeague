@@ -938,6 +938,20 @@ namespace LogicLeague
 
             var reconstructItinerary = ReconstructItinerary.FindItinerary([["JFK", "SFO"], ["JFK", "ATL"], ["SFO", "ATL"], ["ATL", "JFK"], ["ATL", "SFO"]]);
 
+            var minCosToConnect = new MinCostToConnect();
+
+            var cost1211 = minCosToConnect.MinCostConnectPoints([[0, 0], [2, 2], [3, 10], [5, 2], [7, 0]]);
+
+            var swimWater12 = SwimWatter.SwimInWater([[0, 1, 2, 3, 4],
+                                                      [24, 23, 22, 21, 5],
+                                                      [12, 13, 14, 15, 16],
+                                                      [11, 17, 18, 19, 20],
+                                                      [10, 9, 8, 7, 6]]);
+
+            var swimWater211 = SwimWatter.SwimInWater([[0, 2], [1, 3]]);
+            var swimWater2151 = SwimWatter.SwimInWater([[3, 2], [0, 1]]);
+
+            var minCostToConnect2 = CheapestFlightWithKStops.FindCheapestPrice(4, [[0, 1, 100], [1, 2, 100], [2, 0, 100], [1, 3, 600], [2, 3, 200]], 0, 3, 2);
             Console.WriteLine("Hello world");
         }
     }
