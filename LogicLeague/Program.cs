@@ -952,6 +952,10 @@ namespace LogicLeague
             var swimWater2151 = SwimWatter.SwimInWater([[3, 2], [0, 1]]);
 
             var minCostToConnect2 = CheapestFlightWithKStops.FindCheapestPrice(4, [[0, 1, 100], [1, 2, 100], [2, 0, 100], [1, 3, 600], [2, 3, 200]], 0, 3, 2);
+            
+            var wordLadder = WordLadder.LadderLength("hit", "cog", ["hot", "dot", "dog", "lot", "log", "cog"]);
+            var wordLadder2 = WordLadder2.FindLadders("hit", "cog", ["hot", "dot", "dog", "lot", "log", "cog"]);
+
             Console.WriteLine("Hello world");
         }
     }
