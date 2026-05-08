@@ -227,6 +227,7 @@ namespace LogicLeague
 
             var decodeWays3 = DecodeWays.NumDecodingsV2("456");
             var decodeWays4 = DecodeWays.NumDecodingsV2("122016");
+            var decodeWays5 = DecodeWays.NumDecodingsV2("06");
 
             var pascalTriangle = PascalsTriangle.Generate(5);
 
