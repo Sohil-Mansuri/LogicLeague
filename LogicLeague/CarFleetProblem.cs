@@ -35,6 +35,62 @@
 
             return ans;
         }
+
+        //using stack
+        public static int CarFleetV2(int target, int[] position, int[] speed)
+        {
+            var carFleets = new CarFleet[position.Length];
+            for (int i = 0; i < position.Length; i++)
+            {
+                carFleets[i] = new CarFleet
+                {
+                    Position = position[i],
+                    TimeToTarget = (target - position[i]) * 1.0 / speed[i]
+                };
+            }
+
+            carFleets = [.. carFleets.OrderByDescending(x => x.Position)];
+
+            var stack = new Stack<double>();
+            stack.Push(carFleets[0].TimeToTarget);
+            for (int i = 1; i < carFleets.Length; i++)
+            {
+                if (stack.Count > 0 && carFleets[i].TimeToTarget > stack.Peek())
+                {
+                    stack.Push(carFleets[i].TimeToTarget);
+                }
+            }
+
+
+            return stack.Count;
+        }
+
+        public static int CarFleetV3(int target, int[] position, int[] speed)
+        {
+            var cars = new List<(int position, double time)>();
+
+            for (int i = 0; i < position.Length; i++)
+            {
+                double time = (target - position[i]) * 1.0 / speed[i];
+                cars.Add((position[i], time));
+            }
+
+            cars.Sort((a, b) => b.position.CompareTo(a.position));
+
+            int fleets = 0;
+            double lastFleetTime = 0;
+
+            foreach (var car in cars)
+            {
+                if (car.time > lastFleetTime)
+                {
+                    fleets++;
+                    lastFleetTime = car.time;
+                }
+            }
+
+            return fleets;
+        }
     }
 
     public class CarFleet

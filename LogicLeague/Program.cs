@@ -2,6 +2,7 @@
 using LogicLeague.CodingPatterns._1.TwoPointers;
 using LogicLeague.CodingPatterns._2.SlidingWindow;
 using LogicLeague.Graph;
+using LogicLeague.Simple;
 using LogicLeague.Stack;
 using LogicLeague.Tree;
 using static LogicLeague.EmployeeFreeTimeProblem;
@@ -345,6 +346,7 @@ namespace LogicLeague
             var min2 = minStack.GetMin();
 
             var carfleet = CarFleetProblem.CarFleet(12, [10, 8, 0, 5, 3], [2, 4, 1, 1, 3]);
+            var carfleetv2 = CarFleetProblem.CarFleetV2(12, [10, 8, 0, 5, 3], [2, 4, 1, 1, 3]);
             var carfleet2 = CarFleetProblem.CarFleet(100, [0, 2, 4], [4, 2, 1]);
             var carfleet3 = CarFleetProblem.CarFleet(10, [3], [3]);
             var carfleet4 = CarFleetProblem.CarFleet(10, [6, 8], [3, 2]);
@@ -953,10 +955,26 @@ namespace LogicLeague
             var swimWater2151 = SwimWatter.SwimInWater([[3, 2], [0, 1]]);
 
             var minCostToConnect2 = CheapestFlightWithKStops.FindCheapestPrice(4, [[0, 1, 100], [1, 2, 100], [2, 0, 100], [1, 3, 600], [2, 3, 200]], 0, 3, 2);
-            
+
             var wordLadder = WordLadder.LadderLength("hit", "cog", ["hot", "dot", "dog", "lot", "log", "cog"]);
             var wordLadder2 = WordLadder2.FindLadders("hit", "cog", ["hot", "dot", "dog", "lot", "log", "cog"]);
 
+
+            var nonRepeating = StringAndCharacterExample.FirstNonRepeatingCharacter("leetcode");
+
+            var isAnagram = StringAndCharacterExample.IsAnagram("listen", "silent");
+
+            var firstRepeatingCharacter = StringAndCharacterExample.FirstRepeatingCharacter("abccdf");
+
+            var duplicateCharacters = StringAndCharacterExample.FindDuplicateCharacter("abccdfff");
+
+
+            var occurrance = LimitOccurrencesEx.LimitOccurrences([1, 2,3], 1);
+            var passportStrength = PasswordStrengthEx.PasswordStrength("aA1!");
+
+            var minOperationtosrot = MinimumOperationToSrot.MinimumOperations([0, 2, 1]);
+
+            var numberOfVisiblePeopleInQueue = NumberOfVisiblePeopleInQueue.CanSeePersonsCount([10, 6, 8, 5, 11, 9]);
             Console.WriteLine("Hello world");
         }
     }
